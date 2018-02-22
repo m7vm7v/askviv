@@ -1,0 +1,54 @@
+### Mac ###
+.DS_Store
+
+### Vagrant ###
+.vagrant/
+/shared
+
+### PHP Storm ###
+.idea/
+
+### Composer ###
+composer.phar
+/vendor
+
+
+### Database files ###
+*.sql
+
+# All Drupal should be built from scratch. Websites are symlinked in from /sites
+/web/core
+# /web/libraries
+/web/modules/contrib
+/web/profiles/contrib
+/web/themes/contrib
+/sites/**/files
+/sites/**/assets/**/*.map
+/sites/**/assets/**/*.css
+/sites/**/assets/**/*.js.map
+/sites/**/assets/js/*.js
+/sites/middlesbrough/settings.php
+/web/sites
+#settings.local.php
+#services.local.yml
+
+# Frontend ignores
+npm-debug.log
+styles.css
+styles.css.map
+production.js
+production.min.js
+production.js.map
+vendor.js
+vendor.js.map
+vendor.min.js
+node_modules/
+bower_components/
+.sass-cache/
+resources/
+private/
+local.*.php
+svg-sprite.svg
+*.sublime-project
+*.sublime-workspace
+*.zip
