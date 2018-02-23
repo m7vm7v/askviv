@@ -795,3 +795,13 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_OS0wDJN-oiJzAAPVg1JQ4U7yJOn3wJDPdmj55D2UfrWYNohrPpwg_s5xvie_xYr17C2WOZFIwQ/sync';
+
+$settings['trusted_host_patterns'] = [
+  'askviv.*dd',
+  'askviv.*dev',
+  'local.*ncc',
+  '^.*askviv.website$',
+  '^.*askviv.co$',
+];
+
+$config_directories['sync'] = 'config/sync';
