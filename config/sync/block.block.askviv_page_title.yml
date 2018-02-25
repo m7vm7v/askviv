@@ -1,0 +1,20 @@
+uuid: 16ec3aeb-ee74-4d61-bab8-5e8e5891677a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - askviv
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: askviv_page_title
+theme: askviv
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

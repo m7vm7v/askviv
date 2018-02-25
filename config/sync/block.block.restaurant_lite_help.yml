@@ -1,0 +1,22 @@
+uuid: 0c200299-c3ba-46dc-beb9-6592b0a8efa9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - restaurant_lite
+_core:
+  default_config_hash: uYv2xnb_pZB3lw7nlbWCyxsog6WsZmw3UC4mwuSa9Eg
+id: restaurant_lite_help
+theme: restaurant_lite
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

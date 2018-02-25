@@ -1,0 +1,22 @@
+uuid: 1e443c8d-3faf-40c6-9686-1834993cca28
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - restaurant_lite
+_core:
+  default_config_hash: JmShyZ62nZKJhdzQBlwhQfXouFlThdcav33XFRE4JOk
+id: restaurant_lite_powered
+theme: restaurant_lite
+region: sub_footer_first
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

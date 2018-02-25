@@ -1,0 +1,26 @@
+uuid: 529fe2e4-8f34-49d0-bb69-dc879e8f5413
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - restaurant_lite
+_core:
+  default_config_hash: e5bbHM7v9bnNMwsjX317yiGL56i8BwUclh1JqgciUno
+id: restaurant_lite_main_menu
+theme: restaurant_lite
+region: header
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

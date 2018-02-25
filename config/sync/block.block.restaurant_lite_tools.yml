@@ -1,0 +1,26 @@
+uuid: e2e72d74-6c93-4675-9e0a-ec2fe4bb279b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - restaurant_lite
+_core:
+  default_config_hash: RDT_fkFc4U8-Ji7L8YnKE_qDqv4_VsX4pbFyYfete7w
+id: restaurant_lite_tools
+theme: restaurant_lite
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

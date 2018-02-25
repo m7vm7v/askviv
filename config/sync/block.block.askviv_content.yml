@@ -1,0 +1,22 @@
+uuid: 47f29207-9aab-448e-a137-8b45b4b481a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - askviv
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: askviv_content
+theme: askviv
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: e3ae6893-586f-4099-a983-cb1feaa2faca
+langcode: en
+status: true
+dependencies:
+  theme:
+    - restaurant_lite
+_core:
+  default_config_hash: i7JQqS5Ylyvi8Ysit5jJ9KJKC2io0N50TQC5ZNY_nz4
+id: restaurant_lite_page_title
+theme: restaurant_lite
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

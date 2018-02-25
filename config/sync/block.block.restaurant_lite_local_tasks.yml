@@ -1,0 +1,22 @@
+uuid: 61cec76f-d6fc-4395-a331-b40489fcfca4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - restaurant_lite
+_core:
+  default_config_hash: kgMZ-zYPX9iRb4doXUOA-OaK8eWYOGEprGZesxLDvNw
+id: restaurant_lite_local_tasks
+theme: restaurant_lite
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

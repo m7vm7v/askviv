@@ -1,0 +1,22 @@
+uuid: 03307102-72eb-497a-9183-ce482dc25768
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - askviv
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: askviv_breadcrumbs
+theme: askviv
+region: banner
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
