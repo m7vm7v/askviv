@@ -1,0 +1,49 @@
+uuid: a628f52b-a4b7-430b-a11c-7f4604457384
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.ask_me
+    - field.field.contact_message.ask_me.field_publicity
+id: contact_message.ask_me.default
+targetEntityType: contact_message
+bundle: ask_me
+mode: default
+content:
+  field_publicity:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  mail:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  preview: true

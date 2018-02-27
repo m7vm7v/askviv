@@ -1,0 +1,32 @@
+uuid: 914f2abd-155b-4484-9364-0048b6b08c9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.ask_me
+    - field.field.contact_message.ask_me.field_publicity
+id: contact_message.ask_me.default
+targetEntityType: contact_message
+bundle: ask_me
+mode: default
+content:
+  field_publicity:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

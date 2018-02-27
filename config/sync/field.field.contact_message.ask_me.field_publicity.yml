@@ -1,0 +1,23 @@
+uuid: 79308e6a-051f-42bc-9567-770da1166d37
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.ask_me
+    - field.storage.contact_message.field_publicity
+id: contact_message.ask_me.field_publicity
+field_name: field_publicity
+entity_type: contact_message
+bundle: ask_me
+label: Publicity
+description: "Can we use your question in the section 'Asked'? \r\nYour name won't be displayed!"
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
