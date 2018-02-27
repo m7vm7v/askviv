@@ -1,0 +1,36 @@
+uuid: 574de101-ce16-4849-98f2-d1789483d1f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ask_me
+    - node.type.homepage
+    - webform.webform.ask_me
+  module:
+    - webform
+id: node.homepage.field_ask_me
+field_name: field_ask_me
+entity_type: node
+bundle: homepage
+label: 'Ask me'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 7b39cd89-5b7c-4b42-a691-2233b8f5857e
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

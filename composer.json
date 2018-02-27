@@ -21,7 +21,8 @@
         "drupal/entity_embed": "^1.0@beta",
         "drupal/social_media": "^1.2",
         "drupal/recaptcha": "^2.2",
-        "drupal/formblock": "^1.0@beta"
+        "drupal/formblock": "^1.0@beta",
+        "drupal/webform": "^5.0@RC"
     },
     "replace": {
         "drupal/core": "^8.4"

@@ -1,0 +1,174 @@
+uuid: ce407e7f-6fba-437c-90be-bd3c0ef5ec11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage.body
+    - field.field.node.homepage.field_address
+    - field.field.node.homepage.field_ask_me
+    - field.field.node.homepage.field_banner_body
+    - field.field.node.homepage.field_banner_link
+    - field.field.node.homepage.field_banner_title
+    - field.field.node.homepage.field_blog_article
+    - field.field.node.homepage.field_content
+    - field.field.node.homepage.field_email
+    - field.field.node.homepage.field_image
+    - field.field.node.homepage.field_newsletter_article
+    - field.field.node.homepage.field_phone
+    - node.type.homepage
+  module:
+    - ds
+    - entity_reference_revisions
+    - image
+    - link
+    - text
+    - user
+    - webform
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_image
+        - field_banner_title
+        - field_banner_body
+        - field_banner_link
+        - node_title
+        - body
+        - field_content
+        - field_ask_me
+        - field_blog_article
+        - field_newsletter_article
+        - field_address
+        - field_phone
+        - field_email
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 4
+        label: hidden
+        formatter: default
+id: node.homepage.default
+targetEntityType: node
+bundle: homepage
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 5
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: ds_content
+  field_address:
+    weight: 10
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_ask_me:
+    weight: 7
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: ds_content
+  field_banner_body:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: ds_content
+  field_banner_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_banner_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_blog_article:
+    weight: 8
+    label: hidden
+    settings:
+      view_mode: homepage
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: ds_content
+  field_content:
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_email:
+    weight: 12
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: ds_content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  field_newsletter_article:
+    weight: 9
+    label: hidden
+    settings:
+      view_mode: homepage
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: ds_content
+  field_phone:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+hidden:
+  langcode: true
+  links: true

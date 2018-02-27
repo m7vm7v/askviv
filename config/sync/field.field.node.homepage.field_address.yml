@@ -1,0 +1,21 @@
+uuid: b44397bf-2848-4f40-8191-2c94e231962a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.homepage
+  module:
+    - text
+id: node.homepage.field_address
+field_name: field_address
+entity_type: node
+bundle: homepage
+label: Address
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

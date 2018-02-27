@@ -1,0 +1,28 @@
+uuid: 0b536bae-afa1-4433-bc77-298e4b3a9a23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsletter_article
+    - node.type.homepage
+    - node.type.newsletter
+id: node.homepage.field_newsletter_article
+field_name: field_newsletter_article
+entity_type: node
+bundle: homepage
+label: 'Newsletter article'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      newsletter: newsletter
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

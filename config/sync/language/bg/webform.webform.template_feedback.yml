@@ -1,0 +1,8 @@
+handlers:
+  email_confirmation:
+    settings:
+      from_name: 'по подразбиране'
+      subject: 'по подразбиране'
+  email_notification:
+    settings:
+      subject: 'по подразбиране'

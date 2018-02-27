@@ -1,0 +1,6 @@
+settings:
+  confirmation_message: 'Вашето съобщение беше изпратено.'
+handlers:
+  email_confirmation:
+    settings:
+      from_name: 'по подразбиране'

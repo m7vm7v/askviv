@@ -1,0 +1,41 @@
+uuid: 1895f4a9-0ba9-4b5e-a8ed-89b1511713f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.homepage
+    - field.field.node.newsletter.body
+    - field.field.node.newsletter.field_content
+    - field.field.node.newsletter.field_image
+    - field.field.node.newsletter.field_related_content
+    - node.type.newsletter
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.newsletter.homepage
+targetEntityType: node
+bundle: newsletter
+mode: homepage
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  field_related_content: true
+  langcode: true
+  links: true
