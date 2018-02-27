@@ -1,0 +1,29 @@
+uuid: bdb9d12d-abd2-45dd-a1c7-fb4bef7b82ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_content
+    - node.type.blog
+    - node.type.newsletter
+id: node.blog.field_related_content
+field_name: field_related_content
+entity_type: node
+bundle: blog
+label: 'Related content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      blog: blog
+      newsletter: newsletter
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: blog
+field_type: entity_reference
