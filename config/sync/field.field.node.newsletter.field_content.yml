@@ -1,0 +1,51 @@
+uuid: 281435a1-7654-4b6e-b77a-f4002c3ebfab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.newsletter
+    - paragraphs.paragraphs_type.body
+    - paragraphs.paragraphs_type.content_2_side_block
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.newsletter.field_content
+field_name: field_content
+entity_type: node
+bundle: newsletter
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      body: body
+      content_2_side_block: content_2_side_block
+      image: image
+      quote: quote
+      video: video
+    target_bundles_drag_drop:
+      body:
+        enabled: true
+        weight: 6
+      content_2_side_block:
+        enabled: true
+        weight: 7
+      image:
+        enabled: true
+        weight: 8
+      quote:
+        enabled: true
+        weight: 9
+      video:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions
