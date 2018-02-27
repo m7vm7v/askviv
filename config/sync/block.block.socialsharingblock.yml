@@ -1,0 +1,20 @@
+uuid: b566933d-72b7-4e02-8c9f-7636f0cc3114
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media
+  theme:
+    - askviv
+id: socialsharingblock
+theme: askviv
+region: sub_footer_top_second
+weight: -5
+provider: null
+plugin: social_sharing_block
+settings:
+  id: social_sharing_block
+  label: 'Social Sharing block'
+  provider: social_media
+  label_display: '0'
+visibility: {  }

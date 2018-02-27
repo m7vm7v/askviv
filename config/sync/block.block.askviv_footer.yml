@@ -12,8 +12,8 @@ _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: askviv_footer
 theme: askviv
-region: footer
-weight: -6
+region: sub_footer_top_third
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
