@@ -1,0 +1,43 @@
+uuid: c743e108-e20b-4e87-8053-351ba5468ebc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_2_side_block.field_left_side
+    - field.field.paragraph.content_2_side_block.field_right_side
+    - paragraphs.paragraphs_type.content_2_side_block
+  module:
+    - paragraphs
+id: paragraph.content_2_side_block.default
+targetEntityType: paragraph
+bundle: content_2_side_block
+mode: default
+content:
+  field_left_side:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_right_side:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

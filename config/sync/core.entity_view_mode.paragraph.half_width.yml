@@ -1,0 +1,10 @@
+uuid: 76406026-d265-4232-a81c-3c07bf49e63a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.half_width
+label: Half-width
+targetEntityType: paragraph
+cache: true

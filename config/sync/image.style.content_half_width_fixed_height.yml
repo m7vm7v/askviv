@@ -1,0 +1,17 @@
+uuid: 4d1171bb-c329-4a14-95ca-035968899332
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: content_half_width_fixed_height
+label: 'Content: Half width (fixed height)'
+effects:
+  e3403922-fca7-41f1-9668-90e098804aa7:
+    uuid: e3403922-fca7-41f1-9668-90e098804aa7
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 430
+      height: 242
+      crop_type: focal_point

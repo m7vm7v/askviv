@@ -1,0 +1,9 @@
+uuid: df1bd225-276e-4cab-b5a0-acea87444dbf
+langcode: en
+status: true
+dependencies: {  }
+id: body
+label: 'Content: Body'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

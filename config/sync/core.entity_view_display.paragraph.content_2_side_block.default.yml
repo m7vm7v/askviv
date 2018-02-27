@@ -1,0 +1,57 @@
+uuid: 8f5a3f59-4f9b-45f9-a515-97245335d15e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_2_side_block.field_left_side
+    - field.field.paragraph.content_2_side_block.field_right_side
+    - paragraphs.paragraphs_type.content_2_side_block
+  module:
+    - ds
+    - entity_reference_revisions
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_left_side
+      right:
+        - field_right_side
+id: paragraph.content_2_side_block.default
+targetEntityType: paragraph
+bundle: content_2_side_block
+mode: default
+content:
+  field_left_side:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: half_width
+      link: ''
+    third_party_settings: {  }
+    region: left
+  field_right_side:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: half_width
+      link: ''
+    third_party_settings: {  }
+    region: right
+hidden: {  }

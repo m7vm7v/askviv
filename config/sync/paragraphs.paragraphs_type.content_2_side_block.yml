@@ -1,0 +1,9 @@
+uuid: 35230fc1-c768-40f4-bd05-d27859202f0c
+langcode: en
+status: true
+dependencies: {  }
+id: content_2_side_block
+label: 'Content: 2-side block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
