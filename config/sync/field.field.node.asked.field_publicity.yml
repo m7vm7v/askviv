@@ -1,0 +1,23 @@
+uuid: 1664a060-b875-4949-b3a0-4df27b58539d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicity
+    - node.type.asked
+id: node.asked.field_publicity
+field_name: field_publicity
+entity_type: node
+bundle: asked
+label: Publicity
+description: 'Is this question publicly visible?'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

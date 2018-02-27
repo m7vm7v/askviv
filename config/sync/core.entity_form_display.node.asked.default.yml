@@ -1,0 +1,57 @@
+uuid: 76ed809e-80fa-43bb-8150-4d0c0d84bd58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.asked.field_answer
+    - field.field.node.asked.field_publicity
+    - node.type.asked
+  module:
+    - text
+id: node.asked.default
+targetEntityType: node
+bundle: asked
+mode: default
+content:
+  field_answer:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_publicity:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

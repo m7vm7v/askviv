@@ -1,0 +1,27 @@
+uuid: af250e77-e778-4cd8-815f-a89561a4d1c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.asked.field_answer
+    - field.field.node.asked.field_publicity
+    - node.type.asked
+  module:
+    - text
+    - user
+id: node.asked.default
+targetEntityType: node
+bundle: asked
+mode: default
+content:
+  field_answer:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_publicity: true
+  langcode: true
+  links: true
