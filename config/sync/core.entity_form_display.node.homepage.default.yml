@@ -4,23 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.homepage.body
-    - field.field.node.homepage.field_address
     - field.field.node.homepage.field_ask_me
-    - field.field.node.homepage.field_banner_body
-    - field.field.node.homepage.field_banner_link
-    - field.field.node.homepage.field_banner_title
-    - field.field.node.homepage.field_blog_article
     - field.field.node.homepage.field_content
-    - field.field.node.homepage.field_email
-    - field.field.node.homepage.field_image
-    - field.field.node.homepage.field_newsletter_article
-    - field.field.node.homepage.field_phone
-    - image.style.thumbnail
     - node.type.homepage
   module:
     - field_group
-    - image
-    - link
     - paragraphs
     - text
 third_party_settings:
@@ -81,44 +69,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  field_address:
-    weight: 9
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
-    region: content
-  field_banner_body:
-    weight: 10
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_banner_link:
-    weight: 11
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_banner_title:
-    weight: 9
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_blog_article:
-    weight: 26
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_content:
     weight: 3
     settings:
@@ -130,36 +80,6 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     type: entity_reference_paragraphs
-    region: content
-  field_email:
-    weight: 11
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: email_default
-    region: content
-  field_image:
-    weight: 8
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_newsletter_article:
-    weight: 27
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_phone:
-    weight: 10
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
     region: content
   langcode:
     type: language_select

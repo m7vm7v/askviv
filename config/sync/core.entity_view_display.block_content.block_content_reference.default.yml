@@ -1,0 +1,23 @@
+uuid: 0431cdca-dccd-4b44-92ea-0c5eaffc373c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_content_reference
+    - field.field.block_content.block_content_reference.field_content
+id: block_content.block_content_reference.default
+targetEntityType: block_content
+bundle: block_content_reference
+mode: default
+content:
+  field_content:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: homepage
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true

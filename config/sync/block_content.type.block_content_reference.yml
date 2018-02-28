@@ -1,0 +1,8 @@
+uuid: 27be59ef-bae7-4c9f-9b07-2353b780f371
+langcode: en
+status: true
+dependencies: {  }
+id: block_content_reference
+label: 'Block content reference'
+revision: 0
+description: ''

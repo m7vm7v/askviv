@@ -10,7 +10,7 @@ id: ask_me
 title: 'Ask me'
 description: ''
 category: ''
-elements: "your_name:\n  '#type': textfield\n  '#title': 'Your name'\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\nquestion:\n  '#type': textarea\n  '#title': Question\n  '#required': true\npublicity:\n  '#type': checkbox\n  '#title': Publicity\nactions:\n  '#type': webform_actions\n  '#title': Ask\n"
+elements: "your_name:\n  '#type': textfield\n  '#title': 'Your name'\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\nquestion:\n  '#type': textarea\n  '#title': Question\n  '#required': true\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA\n  '#captcha_admin_mode': true\npublicity:\n  '#type': checkbox\n  '#title': Publicity\n  '#help': 'Would you like the question to be used in the &#39;Asked&#39; section? Your name won&#39;t be mentioned!'\n  '#default_value': true\nactions:\n  '#type': webform_actions\n  '#title': Ask\n"
 css: ''
 javascript: ''
 settings:

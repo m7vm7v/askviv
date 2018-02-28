@@ -11,7 +11,7 @@ _core:
 id: askviv_breadcrumbs
 theme: askviv
 region: banner
-weight: -6
+weight: -10
 provider: null
 plugin: system_breadcrumb_block
 settings:

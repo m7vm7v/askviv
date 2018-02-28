@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.newsletter.field_content
     - field.field.node.newsletter.field_image
     - field.field.node.newsletter.field_related_content
+    - field.field.node.newsletter.field_short_description
     - node.type.newsletter
   module:
     - ds
@@ -56,5 +57,6 @@ content:
     type: entity_reference_entity_view
     region: content
 hidden:
+  field_short_description: true
   langcode: true
   links: true

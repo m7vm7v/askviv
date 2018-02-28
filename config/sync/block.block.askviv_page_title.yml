@@ -9,7 +9,7 @@ _core:
 id: askviv_page_title
 theme: askviv
 region: content
-weight: -5
+weight: -8
 provider: null
 plugin: page_title_block
 settings:

@@ -1,17 +1,16 @@
-uuid: 3f110bc8-8b38-496b-88f8-be290e1bbab1
+uuid: e668fd1d-6cf3-43fe-a420-e21cc4b38892
 langcode: en
 status: true
 dependencies:
   module:
+    - block_content
     - node
-id: node.field_banner_title
-field_name: field_banner_title
-entity_type: node
-type: string
+id: block_content.field_content
+field_name: field_content
+entity_type: block_content
+type: entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  target_type: node
 module: core
 locked: false
 cardinality: 1

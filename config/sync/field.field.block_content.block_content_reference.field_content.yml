@@ -1,0 +1,32 @@
+uuid: 668b8fe6-90a4-4442-8d9b-28d48718582d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_content_reference
+    - field.storage.block_content.field_content
+    - node.type.blog
+    - node.type.homepage
+    - node.type.newsletter
+id: block_content.block_content_reference.field_content
+field_name: field_content
+entity_type: block_content
+bundle: block_content_reference
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      blog: blog
+      homepage: homepage
+      newsletter: newsletter
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: blog
+field_type: entity_reference

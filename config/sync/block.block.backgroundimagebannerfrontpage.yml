@@ -1,0 +1,31 @@
+uuid: 86db1c9a-9ea1-4770-b68e-58bf20f14755
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8c50efca-efef-4718-9a4f-24ce697c0eeb'
+  module:
+    - block_content
+    - system
+  theme:
+    - askviv
+id: backgroundimagebannerfrontpage
+theme: askviv
+region: banner
+weight: -9
+provider: null
+plugin: 'block_content:8c50efca-efef-4718-9a4f-24ce697c0eeb'
+settings:
+  id: 'block_content:8c50efca-efef-4718-9a4f-24ce697c0eeb'
+  label: 'Background image Banner Front page'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

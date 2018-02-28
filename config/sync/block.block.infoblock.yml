@@ -1,0 +1,31 @@
+uuid: b6302630-7ac0-4545-8143-374804daed8b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:32255575-ebaa-401a-a6e7-7354bb6d7d5c'
+  module:
+    - block_content
+    - system
+  theme:
+    - askviv
+id: infoblock
+theme: askviv
+region: content_top
+weight: -9
+provider: null
+plugin: 'block_content:32255575-ebaa-401a-a6e7-7354bb6d7d5c'
+settings:
+  id: 'block_content:32255575-ebaa-401a-a6e7-7354bb6d7d5c'
+  label: 'Info block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

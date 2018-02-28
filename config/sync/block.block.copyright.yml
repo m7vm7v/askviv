@@ -1,0 +1,25 @@
+uuid: de31e54b-302e-431e-a11a-7232b66f319b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:edcc0c2c-d384-4f77-95dd-b879f1a08df9'
+  module:
+    - block_content
+  theme:
+    - askviv
+id: copyright
+theme: askviv
+region: sub_footer_first
+weight: 0
+provider: null
+plugin: 'block_content:edcc0c2c-d384-4f77-95dd-b879f1a08df9'
+settings:
+  id: 'block_content:edcc0c2c-d384-4f77-95dd-b879f1a08df9'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

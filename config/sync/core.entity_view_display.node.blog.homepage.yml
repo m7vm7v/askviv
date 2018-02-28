@@ -8,35 +8,100 @@ dependencies:
     - field.field.node.blog.field_content
     - field.field.node.blog.field_image
     - field.field.node.blog.field_related_content
+    - field.field.node.blog.field_short_description
     - field.field.node.blog.field_tags
+    - image.style.large
     - node.type.blog
   module:
-    - entity_reference_revisions
-    - text
+    - ds
+    - field_group
+    - image
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_image
+        - node_title
+        - group_center
+        - field_short_description
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 4
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': 'button button--hover-style-2'
+          wrapper: div
+          class: 'views-field views-field-nothing view-featured-article'
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h5
+          class: 'text--colored views-field views-field-title view-featured-article'
+  field_group:
+    group_center:
+      children:
+        - field_short_description
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'views-field views-field-title view-featured-article'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Center
 id: node.blog.homepage
 targetEntityType: node
 bundle: blog
 mode: homepage
 content:
-  body:
-    label: hidden
-    type: text_default
+  field_image:
+    type: image
     weight: 0
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_content:
-    weight: 1
+    region: ds_content
     label: hidden
     settings:
-      view_mode: default
-      link: ''
+      image_style: large
+      image_link: content
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: content
+  field_short_description:
+    type: string
+    weight: 3
+    region: ds_content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
-  field_image: true
+  body: true
+  field_content: true
   field_related_content: true
   field_tags: true
   langcode: true

@@ -1,0 +1,31 @@
+uuid: b558dad1-212e-4136-a8de-7b228da50b86
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:25a76c43-d1e2-4ddd-b68a-aea27a4eef71'
+  module:
+    - block_content
+    - system
+  theme:
+    - askviv
+id: contactinfofooter
+theme: askviv
+region: footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:25a76c43-d1e2-4ddd-b68a-aea27a4eef71'
+settings:
+  id: 'block_content:25a76c43-d1e2-4ddd-b68a-aea27a4eef71'
+  label: 'Contact info - footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

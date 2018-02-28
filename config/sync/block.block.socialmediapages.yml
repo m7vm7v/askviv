@@ -1,0 +1,25 @@
+uuid: 805b363c-6084-4ff9-a194-bba0acca313c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:44830557-9fd3-4d00-94d2-8b484d04e917'
+  module:
+    - block_content
+  theme:
+    - askviv
+id: socialmediapages
+theme: askviv
+region: sub_footer_top_second
+weight: -9
+provider: null
+plugin: 'block_content:44830557-9fd3-4d00-94d2-8b484d04e917'
+settings:
+  id: 'block_content:44830557-9fd3-4d00-94d2-8b484d04e917'
+  label: 'Social media pages'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
