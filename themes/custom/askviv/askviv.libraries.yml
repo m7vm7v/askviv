@@ -5,8 +5,10 @@ global-styling:
     theme:
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: { type: external }
       css/main.css: {}
-  js:
-    js/main.js: {}
   dependencies:
     - core/jquery
     - core/drupal
+fonts:
+  css:
+    theme:
+      'https://fonts.googleapis.com/css?family=Miss+Fajardose': { type: external }

@@ -2,6 +2,9 @@ name: askviv
 type: theme
 description: The main theme for AskViv.
 core: 8.x
+libraries:
+  - askviv/global-styling
+  - askviv/fonts
 base theme: restaurant_lite
 logo:
   path: 'themes/askviv/logo.png'

@@ -1,0 +1,28 @@
+.site-branding__name > a{
+  font-family: 'Miss Fajardose', cursive;
+  font-size: 36px;
+}
+
+.left-side_paragraph{
+  padding-right: 20px;
+  margin-bottom: 0;
+}
+
+.right-side_paragraph{
+  padding-left: 20px;
+}
+
+.block-social-sharing-block{
+  margin-top: -101px;
+  position: absolute;
+  right: 20px;
+}
+
+.block-social-sharing-block > h2{
+  margin-bottom: -45px !important;
+}
+
+.two-sides_paragraph{
+  margin-top: 30px;
+  margin-bottom: 35px;
+}

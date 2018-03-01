@@ -17,3 +17,8 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view paragraph content body'
+  - 'view paragraph content content_2_side_block'
+  - 'view paragraph content image'
+  - 'view paragraph content quote'
+  - 'view paragraph content video'
