@@ -1,0 +1,80 @@
+uuid: 9d3d6b53-b974-4127-960b-a5df90935438
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.homepage
+    - field.field.node.listing_page.body
+    - field.field.node.listing_page.field_content
+    - field.field.node.listing_page.field_image
+    - field.field.node.listing_page.field_listing
+    - field.field.node.listing_page.field_short_description
+    - field.field.node.listing_page.field_user
+    - image.style.large
+    - node.type.listing_page
+  module:
+    - ds
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_image
+        - node_title
+        - field_short_description
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 3
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.listing_page.homepage
+targetEntityType: node
+bundle: listing_page
+mode: homepage
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  field_short_description:
+    type: string
+    weight: 2
+    region: ds_content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_content: true
+  field_listing: true
+  field_user: true
+  langcode: true
+  links: true

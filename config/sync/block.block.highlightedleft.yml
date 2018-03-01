@@ -1,25 +1,25 @@
-uuid: e2892418-ce5e-4e0f-966e-94dffe875dc9
+uuid: 53f16e8d-bb2d-4f7b-8496-5e770026199b
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:block_content_reference:0d327978-9e24-4231-978d-9c82499849d1'
+    - 'block_content:block_content_reference:64b0bb49-3817-4e31-af20-fffabcac5ab3'
   module:
     - block_content
     - system
   theme:
     - askviv
-id: blog
+id: highlightedleft
 theme: askviv
 region: highlighted_first
 weight: 0
 provider: null
-plugin: 'block_content:0d327978-9e24-4231-978d-9c82499849d1'
+plugin: 'block_content:64b0bb49-3817-4e31-af20-fffabcac5ab3'
 settings:
-  id: 'block_content:0d327978-9e24-4231-978d-9c82499849d1'
-  label: Blog
+  id: 'block_content:64b0bb49-3817-4e31-af20-fffabcac5ab3'
+  label: 'Highlighted left'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

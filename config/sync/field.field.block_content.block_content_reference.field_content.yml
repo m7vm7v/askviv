@@ -5,9 +5,7 @@ dependencies:
   config:
     - block_content.type.block_content_reference
     - field.storage.block_content.field_content
-    - node.type.blog
-    - node.type.homepage
-    - node.type.newsletter
+    - node.type.listing_page
 id: block_content.block_content_reference.field_content
 field_name: field_content
 entity_type: block_content
@@ -22,9 +20,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      blog: blog
-      homepage: homepage
-      newsletter: newsletter
+      listing_page: listing_page
     sort:
       field: _none
     auto_create: false

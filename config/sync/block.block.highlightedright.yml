@@ -1,25 +1,25 @@
-uuid: f1abef7a-cec7-4820-942a-f1949be77fcf
+uuid: 36ed2726-e4ac-4556-94bf-9ca74e47c225
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:block_content_reference:3fe09149-217b-4083-8874-958414341910'
+    - 'block_content:block_content_reference:cec965dd-2620-4bfd-9090-8cdf3f01469e'
   module:
     - block_content
     - system
   theme:
     - askviv
-id: newsletter
+id: highlightedright
 theme: askviv
 region: highlighted_second
 weight: 0
 provider: null
-plugin: 'block_content:3fe09149-217b-4083-8874-958414341910'
+plugin: 'block_content:cec965dd-2620-4bfd-9090-8cdf3f01469e'
 settings:
-  id: 'block_content:3fe09149-217b-4083-8874-958414341910'
-  label: Newsletter
+  id: 'block_content:cec965dd-2620-4bfd-9090-8cdf3f01469e'
+  label: 'Highlighted right'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
