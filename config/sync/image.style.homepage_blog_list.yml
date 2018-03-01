@@ -1,0 +1,17 @@
+uuid: 6ccfcf3a-c2bc-4e3b-93c2-19f3e143f708
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: homepage_blog_list
+label: 'Homepage blog list'
+effects:
+  adde3fa6-aab5-4ebb-9850-5014a4adbd7b:
+    uuid: adde3fa6-aab5-4ebb-9850-5014a4adbd7b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 897
+      height: 550
+      crop_type: focal_point
