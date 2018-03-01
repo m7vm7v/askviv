@@ -10,7 +10,7 @@ id: ask_me
 title: 'Ask me'
 description: ''
 category: ''
-elements: "your_name:\n  '#type': textfield\n  '#title': 'Your name'\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\nquestion:\n  '#type': textarea\n  '#title': Question\n  '#required': true\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA\npublicity:\n  '#type': checkbox\n  '#title': Publicity\n  '#help': 'Would you like the question to be used in the &#39;Asked&#39; section? Your name won&#39;t be mentioned!'\n  '#default_value': true\nactions:\n  '#type': webform_actions\n  '#title': Ask\n"
+elements: "flexbox:\n  '#type': webform_flexbox\n  about_you:\n    '#type': container\n    '#attributes':\n      style: 'margin-top: -19px;'\n    your_name:\n      '#type': textfield\n      '#title': 'Your name'\n    email:\n      '#type': email\n      '#title': Email\n      '#required': true\n  question:\n    '#type': textarea\n    '#title': Question\n    '#required': true\nflexbox_01:\n  '#type': webform_flexbox\n  '#attributes':\n    style: 'text-align: right;'\n  container_01:\n    '#type': container\n  container_02:\n    '#type': container\n    '#attributes':\n      style: 'float: right;'\n    captcha:\n      '#type': captcha\n      '#captcha_type': recaptcha/reCAPTCHA\n    publicity:\n      '#type': checkbox\n      '#title': Publicity\n      '#help': 'Would you like the question to be used in the &#39;Asked&#39; section? Your name won&#39;t be mentioned!'\n      '#default_value': true\n    actions:\n      '#type': webform_actions\n      '#title': Ask\n      '#submit__label': Ask\n"
 css: ''
 javascript: ''
 settings:
@@ -71,9 +71,9 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: page
+  confirmation_type: inline
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: 'Thanks for submitting your question.'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true

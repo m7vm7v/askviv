@@ -25,6 +25,12 @@ settings:
             - '-'
             - RemoveFormat
         -
+          name: Allign
+          items:
+            - JustifyBlock
+            - JustifyCenter
+            - JustifyRight
+        -
           name: Linking
           items:
             - DrupalLink
@@ -49,15 +55,25 @@ settings:
           name: Tools
           items:
             - ShowBlocks
+            - JustifyLeft
             - Source
   plugins:
     stylescombo:
       styles: ''
+    language:
+      language_list: un
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null
