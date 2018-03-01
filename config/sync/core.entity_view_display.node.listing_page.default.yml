@@ -1,24 +1,25 @@
-uuid: 605f45a8-8041-42fd-ac95-8035c18e82cd
+uuid: f291eef2-5c96-4323-982c-4ee0af22fd00
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.blog.body
-    - field.field.node.blog.field_content
-    - field.field.node.blog.field_image
-    - field.field.node.blog.field_related_content
-    - field.field.node.blog.field_short_description
-    - field.field.node.blog.field_tags
-    - node.type.blog
+    - field.field.node.listing_page.body
+    - field.field.node.listing_page.field_content
+    - field.field.node.listing_page.field_image
+    - field.field.node.listing_page.field_listing
+    - field.field.node.listing_page.field_short_description
+    - field.field.node.listing_page.field_user
+    - image.style.full_page_width
+    - node.type.listing_page
   module:
-    - ds
     - entity_reference_revisions
     - image
     - text
     - user
-id: node.blog.default
+    - viewfield
+id: node.listing_page.default
 targetEntityType: node
-bundle: blog
+bundle: listing_page
 mode: default
 content:
   body:
@@ -41,31 +42,23 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: full_page_width
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
-  field_related_content:
-    weight: 4
-    label: above
-    settings:
-      view_mode: related_content
-      link: false
-    third_party_settings:
-      ds:
-        ds_limit: ''
-    type: entity_reference_entity_view
-    region: content
-  field_tags:
+  field_listing:
     weight: 3
     label: hidden
     settings:
-      link: true
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
     third_party_settings: {  }
-    type: entity_reference_label
+    type: viewfield_default
     region: content
 hidden:
   field_short_description: true
+  field_user: true
   langcode: true
   links: true

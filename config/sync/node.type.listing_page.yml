@@ -1,0 +1,17 @@
+uuid: 9a089656-8a1d-4250-ab09-fc48e5bad302
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Listing page'
+type: listing_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,17 @@
+uuid: 2ccc4759-736c-4b62-92a8-79487d953869
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: full_page_width
+label: 'Full page width'
+effects:
+  8d693f94-11b7-4735-90a0-e8909410a197:
+    uuid: 8d693f94-11b7-4735-90a0-e8909410a197
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1080
+      height: 810
+      crop_type: focal_point
