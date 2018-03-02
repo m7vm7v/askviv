@@ -74,3 +74,21 @@
   max-height: max-content !important;
   margin: -10px -25px 0 0 !important;
 }
+
+.field--name-field-related-content .field__label {
+  width: 100%;
+  padding: 0 0 30px;
+  margin-bottom: 40px;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 1px solid #b0aeae;
+}
+
+.related-content-title > a{
+  color: #3c3c3c;
+}
+
+.related-content-infobox{
+  margin-top: -30px;
+}

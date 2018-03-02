@@ -1,19 +1,20 @@
-uuid: 76ce7be6-01e9-4afc-a4e5-ccdf778d9b29
+uuid: 50be8b42-5a0c-4685-8a91-a361d540cc63
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.homepage
+    - core.entity_view_mode.node.related_content
     - field.field.node.blog.body
     - field.field.node.blog.field_content
     - field.field.node.blog.field_image
     - field.field.node.blog.field_related_content
     - field.field.node.blog.field_short_description
     - field.field.node.blog.field_tags
-    - image.style.homepage_blog_list
+    - image.style.related_content
     - node.type.blog
   module:
     - ds
+    - field_group
     - image
     - user
 third_party_settings:
@@ -37,6 +38,7 @@ third_party_settings:
         - field_image
         - node_title
         - field_short_description
+        - group_infobox
         - node_link
     fields:
       node_link:
@@ -44,11 +46,6 @@ third_party_settings:
         weight: 3
         label: hidden
         formatter: default
-        settings:
-          'link text': 'Read more'
-          'link class': 'button button--hover-style-2'
-          wrapper: div
-          class: 'views-field views-field-nothing view-featured-article'
       node_title:
         plugin_id: node_title
         weight: 1
@@ -57,21 +54,40 @@ third_party_settings:
         settings:
           link: true
           wrapper: h5
-          class: 'text--colored views-field views-field-title view-featured-article'
-id: node.blog.homepage
+          class: related-content-title
+  field_group:
+    group_infobox:
+      children:
+        - node_title
+        - field_short_description
+        - node_link
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: related-content-infobox
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Infobox
+id: node.blog.related_content
 targetEntityType: node
 bundle: blog
-mode: homepage
+mode: related_content
 content:
   field_image:
-    type: image
     weight: 0
-    region: ds_content
     label: hidden
     settings:
-      image_style: homepage_blog_list
-      image_link: content
+      image_style: related_content
+      image_link: ''
     third_party_settings: {  }
+    type: image
+    region: ds_content
   field_short_description:
     type: string
     weight: 2

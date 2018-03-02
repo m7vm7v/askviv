@@ -1,10 +1,14 @@
 uuid: a3d4ceab-d8de-482d-a74c-b7559a849ab0
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.newsletter.body
+    - field.field.node.newsletter.field_content
+    - field.field.node.newsletter.field_image
+    - field.field.node.newsletter.field_related_content
+    - field.field.node.newsletter.field_short_description
     - node.type.newsletter
   module:
     - text
@@ -26,4 +30,8 @@ content:
     weight: 100
     region: content
 hidden:
+  field_content: true
+  field_image: true
+  field_related_content: true
+  field_short_description: true
   langcode: true

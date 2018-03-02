@@ -1,19 +1,19 @@
-uuid: 76ce7be6-01e9-4afc-a4e5-ccdf778d9b29
+uuid: 57824b05-9244-45f5-bb68-74ecc9f0e425
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.homepage
-    - field.field.node.blog.body
-    - field.field.node.blog.field_content
-    - field.field.node.blog.field_image
-    - field.field.node.blog.field_related_content
-    - field.field.node.blog.field_short_description
-    - field.field.node.blog.field_tags
-    - image.style.homepage_blog_list
-    - node.type.blog
+    - core.entity_view_mode.node.related_content
+    - field.field.node.newsletter.body
+    - field.field.node.newsletter.field_content
+    - field.field.node.newsletter.field_image
+    - field.field.node.newsletter.field_related_content
+    - field.field.node.newsletter.field_short_description
+    - image.style.related_content
+    - node.type.newsletter
   module:
     - ds
+    - field_group
     - image
     - user
 third_party_settings:
@@ -35,46 +35,61 @@ third_party_settings:
     regions:
       ds_content:
         - field_image
+        - group_infobox
         - node_title
         - field_short_description
         - node_link
     fields:
       node_link:
         plugin_id: node_link
-        weight: 3
+        weight: 4
         label: hidden
         formatter: default
-        settings:
-          'link text': 'Read more'
-          'link class': 'button button--hover-style-2'
-          wrapper: div
-          class: 'views-field views-field-nothing view-featured-article'
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 2
         label: hidden
         formatter: default
         settings:
           link: true
           wrapper: h5
-          class: 'text--colored views-field views-field-title view-featured-article'
-id: node.blog.homepage
+          class: related-content-title
+  field_group:
+    group_infobox:
+      children:
+        - node_title
+        - field_short_description
+        - node_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: related-content-infobox
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Infobox
+id: node.newsletter.related_content
 targetEntityType: node
-bundle: blog
-mode: homepage
+bundle: newsletter
+mode: related_content
 content:
   field_image:
-    type: image
     weight: 0
-    region: ds_content
     label: hidden
     settings:
-      image_style: homepage_blog_list
-      image_link: content
+      image_style: related_content
+      image_link: ''
     third_party_settings: {  }
+    type: image
+    region: ds_content
   field_short_description:
     type: string
-    weight: 2
+    weight: 3
     region: ds_content
     label: hidden
     settings:
@@ -84,6 +99,5 @@ hidden:
   body: true
   field_content: true
   field_related_content: true
-  field_tags: true
   langcode: true
   links: true
