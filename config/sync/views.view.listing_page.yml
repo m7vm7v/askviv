@@ -509,7 +509,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Listing page'
+      title: Blog
       header: {  }
       footer: {  }
       empty: {  }
@@ -629,11 +629,13 @@ display:
       defaults:
         filters: false
         filter_groups: false
+        title: false
       filter_groups:
         operator: AND
         groups:
           1: AND
       display_description: ''
+      title: 'Listing page'
     cache_metadata:
       max-age: -1
       contexts:
@@ -653,8 +655,11 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: listing-page
+      path: newsletters
       display_description: ''
+      title: Newsletters
+      defaults:
+        title: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -674,7 +679,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: listing-page
+      path: blog
       display_description: ''
       filters:
         status:
