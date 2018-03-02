@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.listing_page.field_listing
     - field.field.node.listing_page.field_short_description
     - field.field.node.listing_page.field_user
-    - image.style.large
+    - image.style.homepage_blog_list
     - node.type.listing_page
   module:
     - ds
@@ -49,6 +49,10 @@ third_party_settings:
         weight: 1
         label: hidden
         formatter: default
+        settings:
+          link: true
+          wrapper: h5
+          class: ''
 id: node.listing_page.homepage
 targetEntityType: node
 bundle: listing_page
@@ -58,7 +62,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: large
+      image_style: homepage_blog_list
       image_link: ''
     third_party_settings: {  }
     type: image

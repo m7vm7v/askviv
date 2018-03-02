@@ -19,8 +19,8 @@ translatable: false
 default_value:
   -
     token_help: ''
-    display_id: ''
-    arguments: ''
+    display_id: page_1
+    arguments: '[node:field_user:target_id]'
     target_uuid: 5173379e-62cd-475b-8629-97de7ca882a0
 default_value_callback: ''
 settings:
@@ -41,10 +41,10 @@ settings:
     who_s_new: 0
     who_s_online: 0
   allowed_display_types:
+    page: page
     block: 0
     feed: 0
     default: 0
-    page: 0
   handler: 'default:view'
   handler_settings: {  }
 field_type: viewfield

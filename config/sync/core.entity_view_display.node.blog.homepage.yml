@@ -10,11 +10,10 @@ dependencies:
     - field.field.node.blog.field_related_content
     - field.field.node.blog.field_short_description
     - field.field.node.blog.field_tags
-    - image.style.large
+    - image.style.homepage_blog_list
     - node.type.blog
   module:
     - ds
-    - field_group
     - image
     - user
 third_party_settings:
@@ -37,7 +36,6 @@ third_party_settings:
       ds_content:
         - field_image
         - node_title
-        - group_center
         - field_short_description
         - node_link
     fields:
@@ -60,23 +58,6 @@ third_party_settings:
           link: true
           wrapper: h5
           class: 'text--colored views-field views-field-title view-featured-article'
-  field_group:
-    group_center:
-      children:
-        - field_short_description
-      parent_name: ''
-      weight: 2
-      format_type: html_element
-      format_settings:
-        id: ''
-        classes: 'views-field views-field-title view-featured-article'
-        element: div
-        show_label: false
-        label_element: h3
-        attributes: ''
-        effect: none
-        speed: fast
-      label: Center
 id: node.blog.homepage
 targetEntityType: node
 bundle: blog
@@ -86,9 +67,9 @@ content:
     type: image
     weight: 0
     region: ds_content
-    label: hidden
+    label: above
     settings:
-      image_style: large
+      image_style: homepage_blog_list
       image_link: content
     third_party_settings: {  }
   field_short_description:

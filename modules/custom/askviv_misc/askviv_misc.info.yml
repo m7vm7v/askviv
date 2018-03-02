@@ -1,0 +1,6 @@
+name: AskViv Misc
+description: Miscellaneous functionalities for AskViv.
+package: AskViv
+type: module
+version: 1.0
+core: 8.x
