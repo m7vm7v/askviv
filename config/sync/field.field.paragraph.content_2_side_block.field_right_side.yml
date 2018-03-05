@@ -17,7 +17,7 @@ bundle: content_2_side_block
 label: 'Right side'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

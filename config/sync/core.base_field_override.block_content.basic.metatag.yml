@@ -1,18 +1,18 @@
-uuid: da25ae1c-9552-4d4b-89bf-9d7f6946a7a3
+uuid: c9fcff72-1a90-4758-be3e-c150034006d7
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.basic
-id: block_content.basic.changed
-field_name: changed
+id: block_content.basic.metatag
+field_name: metatag
 entity_type: block_content
 bundle: basic
-label: Changed
-description: 'The time that the custom block was last edited.'
+label: Metatags
+description: 'The metatags for the entity.'
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: changed
+field_type: map

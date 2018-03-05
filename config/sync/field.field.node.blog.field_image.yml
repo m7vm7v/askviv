@@ -20,8 +20,8 @@ entity_type: node
 bundle: blog
 label: Image
 description: ''
-required: false
-translatable: true
+required: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
