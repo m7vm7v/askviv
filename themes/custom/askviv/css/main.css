@@ -102,3 +102,62 @@
 .related-content-infobox{
   margin-top: -30px;
 }
+.paragraph--type--quote {
+  padding: 55px 120px 20px;
+}
+
+.paragraph--type--quote {
+  position: relative;
+  padding: 55px 40px 20px;
+  text-align: center;
+}
+
+.paragraph--type--quote .field--name-field-quote-text {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.paragraph--type--quote .field--name-field-quote-text {
+  max-width: 683px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.paragraph--type--quote .field--name-field-quote-author {
+  display: inline-block;
+  padding: 5px 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-top: 1px solid #247d82;
+}
+
+.paragraph--type--quote:before {
+  top: 20px;
+  left: 25px;
+  background-image: url(../images/open-q.png);
+}
+
+.paragraph--type--quote:before, .paragraph--type--quote:after {
+  width: 63px;
+  height: 63px;
+  background-size: 63px;
+}
+
+.paragraph--type--quote:before, .paragraph--type--quote:after {
+  position: absolute;
+  display: block;
+  width: 31px;
+  height: 31px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 31px;
+}
+
+.paragraph--type--quote:after {
+  right: 25px;
+  bottom: 50px;
+  background-image: url(../images/closeq.png);
+}
