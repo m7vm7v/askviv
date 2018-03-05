@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.blog.field_related_content
     - field.field.node.blog.field_short_description
     - field.field.node.blog.field_tags
+    - image.style.full_page_width
     - node.type.blog
   module:
     - ds
@@ -41,7 +42,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: full_page_width
       image_link: ''
     third_party_settings: {  }
     type: image

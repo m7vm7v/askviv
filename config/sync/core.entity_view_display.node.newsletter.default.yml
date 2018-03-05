@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.newsletter.field_image
     - field.field.node.newsletter.field_related_content
     - field.field.node.newsletter.field_short_description
+    - image.style.full_page_width
     - node.type.newsletter
   module:
     - ds
@@ -40,7 +41,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: full_page_width
       image_link: ''
     third_party_settings: {  }
     type: image

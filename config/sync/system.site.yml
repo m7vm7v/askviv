@@ -1,6 +1,6 @@
-uuid: f2d39799-db5f-4b85-92a4-fcb0e8d566fd
+uuid: 53534b97-2cdd-4c80-a6a9-e80f445a6b64
 name: 'Ask Viv'
-mail: daskalovi15@gmail.com
+mail: viv@askviv.co
 slogan: 'Where you can ask anything.'
 page:
   403: ''
@@ -12,3 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

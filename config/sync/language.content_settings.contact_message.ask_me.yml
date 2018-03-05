@@ -1,0 +1,11 @@
+uuid: b9133678-2a15-4512-80b9-9bcf198f2ec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.ask_me
+id: contact_message.ask_me
+target_entity_type_id: contact_message
+target_bundle: ask_me
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 095a2dae-e3d0-4c3f-b66e-85db0fa8f253
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.ask_me
+id: webform_submission.ask_me
+target_entity_type_id: webform_submission
+target_bundle: ask_me
+default_langcode: site_default
+language_alterable: false

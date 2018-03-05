@@ -3,7 +3,9 @@ field_template: false
 ft-default: default
 ft-show-colon: false
 classes:
-  region: {  }
+  region:
+    - background-image-block__section
+    - field--mt-background-image-block
   field: {  }
 use_field_names: true
 _core:
