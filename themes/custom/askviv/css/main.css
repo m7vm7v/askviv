@@ -140,10 +140,26 @@
   background-image: url(../images/open-q.png);
 }
 
+.paragraph--type--quote:after {
+  right: 25px;
+  bottom: 50px;
+  background-image: url(../images/closeq.png);
+  -webkit-transform: scale(2, 2);
+  -moz-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  -o-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
+
 .paragraph--type--quote:before, .paragraph--type--quote:after {
   width: 63px;
   height: 63px;
   background-size: 63px;
+  -webkit-transform: scale(2, 2);
+  -moz-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  -o-transform: scale(2, 2);
+  transform: scale(2, 2);
 }
 
 .paragraph--type--quote:before, .paragraph--type--quote:after {
@@ -154,10 +170,4 @@
   content: "";
   background-repeat: no-repeat;
   background-size: 31px;
-}
-
-.paragraph--type--quote:after {
-  right: 25px;
-  bottom: 50px;
-  background-image: url(../images/closeq.png);
 }
