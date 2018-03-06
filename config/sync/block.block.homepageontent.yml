@@ -12,7 +12,7 @@ dependencies:
 id: homepageontent
 theme: askviv
 region: content_top
-weight: -10
+weight: -9
 provider: null
 plugin: 'block_content:c870d806-9d74-4770-bb85-29bf94fa9b44'
 settings:

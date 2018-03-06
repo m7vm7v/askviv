@@ -11,8 +11,8 @@ dependencies:
     - askviv
 id: infoblock
 theme: askviv
-region: content_top
-weight: -9
+region: system_messages
+weight: -8
 provider: null
 plugin: 'block_content:32255575-ebaa-401a-a6e7-7354bb6d7d5c'
 settings:

@@ -1,0 +1,14 @@
+uuid: fecc41e0-e1da-435d-b977-fad66a1c3136
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.architect
+  module:
+    - user
+id: user_remove_role_action.architect
+label: 'Remove the Architect role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: architect

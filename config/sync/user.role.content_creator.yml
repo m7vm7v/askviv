@@ -1,0 +1,44 @@
+uuid: 9c889427-2d7f-4840-95bc-44ab10e13318
+langcode: en
+status: true
+dependencies: {  }
+id: content_creator
+label: 'Content creator'
+weight: -8
+is_admin: null
+permissions:
+  - 'administer content translation'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'create blog content'
+  - 'create content translations'
+  - 'create newsletter content'
+  - 'create paragraph content body'
+  - 'create paragraph content content_2_side_block'
+  - 'create paragraph content image'
+  - 'create paragraph content quote'
+  - 'create paragraph content video'
+  - 'delete content translations'
+  - 'delete own blog content'
+  - 'delete own newsletter content'
+  - 'delete paragraph content body'
+  - 'delete paragraph content content_2_side_block'
+  - 'delete paragraph content image'
+  - 'delete paragraph content quote'
+  - 'delete paragraph content video'
+  - 'delete terms in tags'
+  - 'edit own blog content'
+  - 'edit own newsletter content'
+  - 'edit terms in tags'
+  - 'translate any entity'
+  - 'translate blog node'
+  - 'translate newsletter node'
+  - 'translate paragraph'
+  - 'update content translations'
+  - 'update paragraph content body'
+  - 'update paragraph content content_2_side_block'
+  - 'update paragraph content image'
+  - 'update paragraph content quote'
+  - 'update paragraph content video'
+  - 'view own unpublished content'
+  - 'view the administration theme'
