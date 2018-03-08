@@ -1,0 +1,25 @@
+recurring_options_values:
+  Day: Daily
+  Week: Weekly
+  SemiMonth: 'Semi Monthly'
+  Month: Monthly
+  Year: Anually
+welcome_text: "<p>If you would like to donate this form will help you.</p>\r\n"
+success_text: "<p>Thank you for supporting the website.</p>\r\n"
+fail_text: "<p>Thanks for your time.</p>\r\n"
+sandbox: false
+lc: en_US
+business: donation@askviv.co
+item_name: AskViv
+item_number: donation
+amounts: ''
+currency_code: GBP
+allow_custom_amount: true
+cn: ''
+no_shipping: false
+recurring: 0
+api_username: ''
+api_password: ''
+api_signature: ''
+recurring_options: {  }
+billing_description: ''

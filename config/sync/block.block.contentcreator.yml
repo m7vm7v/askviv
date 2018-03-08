@@ -1,0 +1,34 @@
+uuid: a95092a0-06c1-4c4d-9feb-210457df8c51
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.content-creator
+  module:
+    - system
+    - user
+  theme:
+    - askviv
+id: contentcreator
+theme: askviv
+region: sub_footer_top_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:content-creator'
+settings:
+  id: 'system_menu_block:content-creator'
+  label: 'Content creator'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      content_creator: content_creator
+      architect: architect
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

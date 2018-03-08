@@ -23,7 +23,8 @@
         "drupal/recaptcha": "^2.2",
         "drupal/formblock": "^1.0@beta",
         "drupal/webform": "^5.0@RC",
-        "drupal/viewfield": "^3.0@alpha"
+        "drupal/viewfield": "^3.0@alpha",
+        "drupal/paypal_donation": "1.x-dev"
     },
     "replace": {
         "drupal/core": "^8.4"

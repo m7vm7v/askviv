@@ -1,0 +1,8 @@
+uuid: 0493128f-796e-43ac-98a2-1cb54a08a2f0
+langcode: en
+status: true
+dependencies: {  }
+id: content-creator
+label: 'Content creator'
+description: ''
+locked: false
