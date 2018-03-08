@@ -173,6 +173,10 @@
   background-size: 31px;
 }
 
+.menu--content-creator{
+  margin-top: -25px;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .homepage-blog-list{

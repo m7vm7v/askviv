@@ -8,5 +8,7 @@ id: global
 label: Global
 tags:
   title: '[current-page:title] | [site:name]'
+  robots: 'index, follow'
   canonical_url: '[current-page:url]'
   description: '[site:slogan]'
+  image_src: /themes/custom/askviv/screenshot.png
