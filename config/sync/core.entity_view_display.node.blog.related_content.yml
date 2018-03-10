@@ -33,6 +33,7 @@ third_party_settings:
         link_custom: ''
         classes:
           layout_class: {  }
+          ds_content: {  }
     regions:
       ds_content:
         - field_image
@@ -46,6 +47,11 @@ third_party_settings:
         weight: 3
         label: hidden
         formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': ''
+          wrapper: ''
+          class: ''
       node_title:
         plugin_id: node_title
         weight: 1

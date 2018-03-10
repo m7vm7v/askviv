@@ -47,7 +47,7 @@ third_party_settings:
         formatter: default
         settings:
           'link text': 'Read more'
-          'link class': ''
+          'link class': 'button button--primary'
           wrapper: ''
           class: ''
       node_title:

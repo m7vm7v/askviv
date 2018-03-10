@@ -5,6 +5,7 @@ global-styling:
     theme:
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: { type: external }
       css/main.css: {}
+      css/theme/color-teal-blue.css: { weight: 150 }
   dependencies:
     - core/jquery
     - core/drupal

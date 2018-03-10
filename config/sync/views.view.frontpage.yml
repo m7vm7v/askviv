@@ -227,7 +227,7 @@ display:
           automatic_width: true
           alignment: horizontal
           col_class_default: true
-          col_class_custom: homepage-blog-list
+          col_class_custom: grid-column
           row_class_default: true
           row_class_custom: ''
       title: Home
@@ -489,7 +489,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"blog-image\">\n{{ field_image }} \n<div class=\"image-gradient\"></div>\n</div>\n\n<div class='blog-info-box'>\n<h2>{{ title }}</h2>\n<p>{{ field_short_description }}</p>\n<p>{{ view_node }}</p>\n</div>"
+            text: "<div class=\"blog-image\">\n{{ field_image }} \n<div class=\"image-gradient\"></div>\n</div>\n\n<div class='blog-info-box'>\n<h2>{{ title }}</h2>\n<p>{{ field_short_description }}</p>\n<div class=\"button button--primary\">{{ view_node }}</div>\n</div>"
             make_link: false
             path: ''
             absolute: false
