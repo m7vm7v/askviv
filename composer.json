@@ -24,7 +24,9 @@
         "drupal/formblock": "^1.0@beta",
         "drupal/webform": "^5.0@RC",
         "drupal/viewfield": "^3.0@alpha",
-        "drupal/paypal_donation": "1.x-dev"
+        "drupal/paypal_donation": "1.x-dev",
+        "drupal/webform_slack": "1.x-dev",
+        "drupal/slack": "^1.2"
     },
     "replace": {
         "drupal/core": "^8.4"

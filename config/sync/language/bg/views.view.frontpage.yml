@@ -1,9 +1,15 @@
 display:
   default:
     display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<div class=\"blog-image\">\r\n{{ field_image }} \r\n<div class=\"image-gradient\"></div>\r\n</div>\r\n\r\n<div class='blog-info-box'>\r\n<h2>{{ title }}</h2>\r\n<p>{{ field_short_description }}</p>\r\n<p>{{ view_node }}</p>\r\n</div>"
+        view_node:
+          text: 'Научи повече'
       exposed_form:
         options:
           submit_button: Apply
           reset_button_label: Reset
   page_1:
-    display_title: Page
+    display_title: Начало

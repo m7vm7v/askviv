@@ -1,7 +1,9 @@
 uuid: 7b39cd89-5b7c-4b42-a691-2233b8f5857e
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - webform_slack
 open: null
 close: null
 uid: 1
@@ -133,4 +135,15 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  slack:
+    id: slack_handler
+    label: Slack
+    handler_id: slack
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      username: Master
+      channel: ask-me
+      message: "<!here> There is a new question send by [webform_submission:values:email] on [webform_submission:created]\n\n[webform_submission:url:canonical]/table\n"

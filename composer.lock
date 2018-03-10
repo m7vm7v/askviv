@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0049bbd4d785ba36a4884001e8b27bc",
+    "content-hash": "82b353e18feb94ecbb5189cc8a5c9477",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2007,6 +2007,65 @@
             }
         },
         {
+            "name": "drupal/slack",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/slack",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slack-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "d978cdf635c0053881ad09c7679c323dfb248e6f"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1508381049",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Serge_Konst",
+                    "homepage": "https://www.drupal.org/user/3285403"
+                },
+                {
+                    "name": "adci_contributor",
+                    "homepage": "https://www.drupal.org/user/1830536"
+                },
+                {
+                    "name": "adcillc",
+                    "homepage": "https://www.drupal.org/user/366450"
+                },
+                {
+                    "name": "hxdef",
+                    "homepage": "https://www.drupal.org/user/2622115"
+                }
+            ],
+            "description": "Integration with Slack.com service.",
+            "homepage": "https://www.drupal.org/project/slack",
+            "support": {
+                "source": "http://cgit.drupalcode.org/slack"
+            }
+        },
+        {
             "name": "drupal/social_media",
             "version": "1.2.0",
             "source": {
@@ -2334,6 +2393,50 @@
                 "docs": "https://www.drupal.org/docs/8/modules/webform",
                 "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
             }
+        },
+        {
+            "name": "drupal/webform_slack",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform_slack",
+                "reference": "2f573e1389221e7384c9ad346e8d59893ab755e4"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/slack": "*",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1517844480",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "smaz",
+                    "homepage": "https://www.drupal.org/user/1468640"
+                }
+            ],
+            "description": "Provides a Webform handler that integrates with Slack.",
+            "homepage": "https://www.drupal.org/project/webform_slack",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_slack"
+            },
+            "time": "2018-02-03 12:59:22"
         },
         {
             "name": "drush/drush",
@@ -6638,6 +6741,7 @@
         "drupal/webform": 5,
         "drupal/viewfield": 15,
         "drupal/paypal_donation": 20,
+        "drupal/webform_slack": 20,
         "behat/mink": 20
     },
     "prefer-stable": true,
