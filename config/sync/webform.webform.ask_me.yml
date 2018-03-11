@@ -25,7 +25,7 @@ settings:
   form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
-  form_previous_submissions: true
+  form_previous_submissions: false
   form_confidential: false
   form_confidential_message: ''
   form_convert_anonymous: false
@@ -73,20 +73,22 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: inline
-  confirmation_title: ''
+  confirmation_type: page
+  confirmation_title: 'Thank you!'
   confirmation_message: 'Thanks for submitting your question.'
   confirmation_url: ''
-  confirmation_attributes: {  }
+  confirmation_attributes:
+    class:
+      - 'messages messages--status'
   confirmation_back: true
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   limit_total: null
   limit_total_interval: null
   limit_total_message: ''
-  limit_user: null
-  limit_user_interval: null
-  limit_user_message: ''
+  limit_user: 10
+  limit_user_interval: 86400
+  limit_user_message: 'All the users are allowed to submit up to 10 questions per day. Thanks for the understanding.'
   entity_limit_total: null
   entity_limit_total_interval: null
   entity_limit_user: null

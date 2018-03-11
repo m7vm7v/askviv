@@ -44,28 +44,33 @@
 }
 
 .blog-info-box{
+  pointer-events: none;
   margin-top: -135px;
   z-index: 1;
   position: relative;
 }
 
 .blog-info-box > h2 > a{
+  pointer-events: all;
   margin-left: 20px;
   color: white;
   font-weight: bold;
 }
 
 .blog-info-box > p{
+  pointer-events: all;
   margin-left: 20px;
   color: white;
   padding: 0 !important;
 }
 
 .blog-info-box > div{
+  pointer-events: all;
   text-align: center;
 }
 
 .blog-info-box > div > a{
+  pointer-events: all;
   background-color: white;
   color: #08605F;
   font-weight: bold;
@@ -77,12 +82,29 @@
   font-weight: bold;
 }
 
+.blog-image{
+  border-radius: 5px;
+}
+
+.blog-image > img{
+  transition: transform .5s;
+}
+
+.blog-image > img:hover{
+  opacity: .7;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
 .grid-column{
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .image-gradient{
+  pointer-events: none;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
   height: 120px;
   position: relative;
@@ -193,6 +215,25 @@
 
 .menu--content-creator{
   margin-top: -25px;
+}
+
+.banner-image{
+  background-size: cover;
+  background-image: url(/themes/custom/askviv/images/bible-read.jpg);
+  background-attachment: fixed;
+}
+
+.images-full-width{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

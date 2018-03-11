@@ -12,4 +12,13 @@ jQuery(document).ready(function($) {
       $(".header__container").removeClass("header__container-small");
     }
   });
+
+  let imgURL = $('.image-style-full-page-width')[0].src;
+
+  $('.images-full-width > div > div > div').parallax({
+    imageSrc: imgURL,
+    zIndex: 100,
+  });
+
+  $('.image-style-full-page-width')[0].style.opacity = '0';
 });

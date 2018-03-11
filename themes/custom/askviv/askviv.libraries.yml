@@ -8,6 +8,7 @@ global-styling:
       css/theme/color-teal-blue.css: { weight: 150 }
   js:
     js/main.js: {}
+    js/parallax/parallax.min.js: {}
   dependencies:
     - core/jquery
     - core/drupal
