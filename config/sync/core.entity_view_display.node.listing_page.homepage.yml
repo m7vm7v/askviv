@@ -69,7 +69,7 @@ content:
     label: hidden
     settings:
       image_style: homepage_blog_list
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
     type: image
     region: ds_content

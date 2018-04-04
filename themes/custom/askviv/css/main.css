@@ -242,6 +242,22 @@
   background: transparent;
 }
 
+.scroll_image_effect{
+  border-radius: 5px;
+}
+
+.scroll_image_effect > img{
+  transition: transform .5s;
+}
+
+.scroll_image_effect > img:hover{
+  opacity: .7;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .grid-column{
