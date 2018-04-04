@@ -1,5 +1,5 @@
 breadcrumb_separator: fa-angle-right
-scroll_to_top_display: true
+scroll_to_top_display: 1
 scroll_to_top_icon: fa-angle-up
 bootstrap_remote_type: cdn
 color_scheme: teal-blue
@@ -179,6 +179,17 @@ owl_collections_autoplay: false
 owl_collections_effect_time: '5'
 isotope_layout_mode: masonry
 isotope_filters_text: All
-google_maps_key: AIzaSyDyL-4KyWw_3hp-0jmZLGcJ3zMWkkJ44VI
+google_maps_key: ''
 _core:
   default_config_hash: y1-42LgjE3xfowgS99bKf3bjDkR83ztU7et-l8l5Tuw
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: themes/custom/askviv/main_logo.png
+favicon:
+  use_default: 1
+premium-description: ''

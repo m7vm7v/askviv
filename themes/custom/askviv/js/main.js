@@ -1,24 +1,35 @@
 jQuery(document).ready(function($) {
-  $(window).scroll(function() {
-    if($(this).scrollTop() != 0) {
 
-      $(".site-branding__slogan").addClass("hidden");
-      $(".header__container").addClass("header__container-small");
+  var is_mobile = false;
 
-    } else {
+  if( $('#smartphone-detected').css('display')=='none') {
+    is_mobile = true;
+  }
 
-      $(".site-branding__slogan").removeClass("hidden");
+  if ( is_mobile == false ){
+    $(window).scroll(function() {
+      if($(this).scrollTop() != 0) {
 
-      $(".header__container").removeClass("header__container-small");
+        $(".site-branding__slogan").addClass("hidden");
+        $(".header__container").addClass("header__container-small");
+
+      } else {
+
+        $(".site-branding__slogan").removeClass("hidden");
+
+        $(".header__container").removeClass("header__container-small");
+      }
+    });
+
+    let paralaxImg = $('.image-style-full-page-width')[0];
+
+    if(paralaxImg){
+      $('.images-full-width > div > div > div').parallax({
+        imageSrc: paralaxImg.src,
+        zIndex: 100,
+      });
+
+      $('.image-style-full-page-width')[0].style.opacity = '0';
     }
-  });
-
-  let imgURL = $('.image-style-full-page-width')[0].src;
-
-  $('.images-full-width > div > div > div').parallax({
-    imageSrc: imgURL,
-    zIndex: 100,
-  });
-
-  $('.image-style-full-page-width')[0].style.opacity = '0';
+  }
 });
