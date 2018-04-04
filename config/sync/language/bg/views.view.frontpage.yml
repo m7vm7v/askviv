@@ -4,7 +4,7 @@ display:
       fields:
         nothing:
           alter:
-            text: "<div class=\"blog-image\">\r\n{{ field_image }} \r\n<div class=\"image-gradient\"></div>\r\n</div>\r\n\r\n<div class='blog-info-box'>\r\n<h2>{{ title }}</h2>\r\n<p>{{ field_short_description }}</p>\r\n<p>{{ view_node }}</p>\r\n</div>"
+            text: "<a href=\"{{ path }}\" class=\"blog-image overlay-container\">\n{{ field_image }} \n<div class=\"image-gradient\"></div>\n</div>\n\n<div class='blog-info-box'>\n<h2>{{ title }}</h2>\n<p>{{ field_short_description }}</p>\n<div class=\"button button--primary\">{{ view_node }}</div>\n</a>"
         view_node:
           text: 'Научи повече'
       exposed_form:
