@@ -6,6 +6,7 @@
     "require": {
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
+        "drupal/core": "^8.4",
         "drush/drush": "8.x-dev",
         "drupal/pathauto": "^1.0",
         "drupal/devel": "^1.2",
@@ -27,9 +28,6 @@
         "drupal/paypal_donation": "1.x-dev",
         "drupal/webform_slack": "1.x-dev",
         "drupal/slack": "^1.2"
-    },
-    "replace": {
-        "drupal/core": "^8.4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
