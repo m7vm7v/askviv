@@ -1,23 +1,23 @@
-uuid: 86db1c9a-9ea1-4770-b68e-58bf20f14755
+uuid: b4a43133-e3d2-45b3-b08e-bd38a1536985
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:8c50efca-efef-4718-9a4f-24ce697c0eeb'
+    - 'block_content:block_content_reference:b2d5a521-b92c-4fc0-a26e-61ad35b30276'
   module:
     - block_content
     - system
   theme:
     - askviv
-id: backgroundimagebannerfrontpage
+id: homepagesection
 theme: askviv
-region: banner
-weight: -9
+region: content_top
+weight: 0
 provider: null
-plugin: 'block_content:8c50efca-efef-4718-9a4f-24ce697c0eeb'
+plugin: 'block_content:b2d5a521-b92c-4fc0-a26e-61ad35b30276'
 settings:
-  id: 'block_content:8c50efca-efef-4718-9a4f-24ce697c0eeb'
-  label: 'Background image Banner Front page'
+  id: 'block_content:b2d5a521-b92c-4fc0-a26e-61ad35b30276'
+  label: 'Homepage section'
   provider: block_content
   label_display: '0'
   status: true

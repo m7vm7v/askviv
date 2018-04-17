@@ -1,0 +1,33 @@
+uuid: 49f0ae1a-fdbc-44c6-b4fe-eeb47b7a432e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e13bb6f9-274d-40e6-87ce-b6ab2e70c4c1'
+  module:
+    - block_content
+    - language
+  theme:
+    - askviv
+id: futerkontaktnaforma
+theme: askviv
+region: footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:e13bb6f9-274d-40e6-87ce-b6ab2e70c4c1'
+settings:
+  id: 'block_content:e13bb6f9-274d-40e6-87ce-b6ab2e70c4c1'
+  label: 'Футер - контактна форма'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    langcodes:
+      bg: bg
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

@@ -11,7 +11,7 @@ _core:
 id: askviv_messages
 theme: askviv
 region: system_messages
-weight: -9
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:

@@ -16,4 +16,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_answer: true
+  field_publicity: true
   langcode: true

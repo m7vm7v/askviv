@@ -1,0 +1,25 @@
+uuid: 53a6a006-c356-4e64-af81-2086ee2f5204
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5f20057a-4519-48f4-80d4-374e6fcc3300'
+  module:
+    - block_content
+  theme:
+    - askviv
+id: footersocialmedia
+theme: askviv
+region: sub_footer_top_second
+weight: 0
+provider: null
+plugin: 'block_content:5f20057a-4519-48f4-80d4-374e6fcc3300'
+settings:
+  id: 'block_content:5f20057a-4519-48f4-80d4-374e6fcc3300'
+  label: 'Footer - Social media'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

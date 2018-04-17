@@ -794,11 +794,11 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_OS0wDJN-oiJzAAPVg1JQ4U7yJOn3wJDPdmj55D2UfrWYNohrPpwg_s5xvie_xYr17C2WOZFIwQ/sync';
 
 $settings['trusted_host_patterns'] = [
   'askviv.*dd',
   'askviv.*dev',
+  'askviv.*test',
   'local.*ncc',
   '^.*askviv.website$',
   '^.*askviv.co$',

@@ -1,0 +1,33 @@
+uuid: 3aa22891-4986-4c73-8123-2549b9c26015
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:440c0216-99eb-4397-bb19-a19a845273fd'
+  module:
+    - block_content
+    - language
+  theme:
+    - askviv
+id: footersitebranding
+theme: askviv
+region: sub_footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:440c0216-99eb-4397-bb19-a19a845273fd'
+settings:
+  id: 'block_content:440c0216-99eb-4397-bb19-a19a845273fd'
+  label: 'Footer - Site branding'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

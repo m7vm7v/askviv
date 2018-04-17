@@ -1,0 +1,39 @@
+uuid: 6f0fd0f3-46f5-41b8-8ada-b438d1e686c6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dacda70f-7ccc-491e-ad81-51984345b4c4'
+  module:
+    - block_content
+    - language
+    - system
+  theme:
+    - askviv
+id: bannersection
+theme: askviv
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:dacda70f-7ccc-491e-ad81-51984345b4c4'
+settings:
+  id: 'block_content:dacda70f-7ccc-491e-ad81-51984345b4c4'
+  label: 'Banner section'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
