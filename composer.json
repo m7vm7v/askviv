@@ -27,7 +27,9 @@
         "drupal/viewfield": "^3.0@alpha",
         "drupal/paypal_donation": "1.x-dev",
         "drupal/webform_slack": "1.x-dev",
-        "drupal/slack": "^1.2"
+        "drupal/slack": "^1.2",
+        "drupal/google_analytics": "^2.2",
+        "drupal/google_analytics_reports": "^3.0@beta"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

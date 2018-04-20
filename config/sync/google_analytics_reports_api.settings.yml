@@ -1,0 +1,11 @@
+access_token: ''
+cache_length: 259200
+client_id: 117088045845-tqkr335bsi7pjaap314enbbcpdrik4v2.apps.googleusercontent.com
+client_secret: oXeuwu-FskduxWSfDdYbVMEd
+default_page: ''
+expires_at: 0
+profile_id: 0
+redirect_uri: 'https://askviv.test/admin/config/services/google-analytics-reports-api'
+refresh_token: ''
+_core:
+  default_config_hash: 0JC-4N7blzXN3nMcQLB6UA__v3DRPG_ieGh9kOSIUrg
