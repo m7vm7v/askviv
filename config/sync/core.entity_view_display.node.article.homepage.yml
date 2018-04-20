@@ -1,0 +1,90 @@
+uuid: 5ba79ae0-b268-417f-938e-1b8064a7fc99
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.homepage
+    - field.field.node.article.body
+    - field.field.node.article.field_content
+    - field.field.node.article.field_image
+    - field.field.node.article.field_related_content
+    - field.field.node.article.field_short_description
+    - field.field.node.article.field_tags
+    - image.style.homepage_blog_list
+    - node.type.article
+  module:
+    - ds
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_image
+        - node_title
+        - field_short_description
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': 'button button--hover-style-2'
+          wrapper: div
+          class: 'views-field views-field-nothing view-featured-article'
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h5
+          class: 'text--colored views-field views-field-title view-featured-article'
+id: node.article.homepage
+targetEntityType: node
+bundle: article
+mode: homepage
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: homepage_blog_list
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  field_short_description:
+    type: string
+    weight: 2
+    region: ds_content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_content: true
+  field_related_content: true
+  field_tags: true
+  langcode: true
+  links: true
