@@ -1,0 +1,4 @@
+title: 'Попитай ме'
+elements: "your_name:\n  '#title': Име\nemail:\n  '#title': Имейл\nquestion:\n  '#title': Въпрос\npublicity:\n  '#title': Публичност\n  '#help': 'Бихте ли желали въпросът ви да бъде използван в секция &#39;Зададени&#39;? Вашето име няма да бъде споменато!'\nactions:\n  '#title': Попитай\n  '#submit__label': Попитай\n"
+settings:
+  confirmation_message: 'Благодарим за въпроса.'
