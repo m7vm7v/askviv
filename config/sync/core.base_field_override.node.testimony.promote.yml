@@ -1,0 +1,22 @@
+uuid: a20c6361-4b9f-4484-b5df-bedc02877d3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.testimony
+id: node.testimony.promote
+field_name: promote
+entity_type: node
+bundle: testimony
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

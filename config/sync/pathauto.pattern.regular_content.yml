@@ -10,7 +10,7 @@ label: 'Regular content'
 type: 'canonical_entities:node'
 pattern: '[node:content-type]/[node:title]'
 selection_criteria:
-  416ea9b7-5360-49f3-86d7-39624b80541b:
+  fee8b03a-659d-4de6-b4a5-0c60fdd5cbe3:
     id: node_type
     bundles:
       article: article
@@ -18,13 +18,13 @@ selection_criteria:
       blog: blog
       homepage: homepage
       newsletter: newsletter
-      page: page
+      testimony: testimony
       webform: webform
     negate: false
     context_mapping:
       node: node
-    uuid: 416ea9b7-5360-49f3-86d7-39624b80541b
-  f27be5eb-e482-4885-a535-5cffdb4f0429:
+    uuid: fee8b03a-659d-4de6-b4a5-0c60fdd5cbe3
+  5b63de2c-22f4-4def-b346-cb6ba469df62:
     id: language
     langcodes:
       en: en
@@ -32,7 +32,7 @@ selection_criteria:
     negate: false
     context_mapping:
       language: 'node:langcode:language'
-    uuid: f27be5eb-e482-4885-a535-5cffdb4f0429
+    uuid: 5b63de2c-22f4-4def-b346-cb6ba469df62
 selection_logic: and
 weight: -10
 relationships:

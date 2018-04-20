@@ -1,0 +1,27 @@
+uuid: 91581d69-ddf9-4938-992b-9d6006808dc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testimony.field_content
+    - node.type.testimony
+  module:
+    - entity_reference_revisions
+    - user
+id: node.testimony.default
+targetEntityType: node
+bundle: testimony
+mode: default
+content:
+  field_content:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  langcode: true
+  links: true
