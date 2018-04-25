@@ -1,0 +1,23 @@
+<div
+    class="clearfix subfooter {{ subfooter_background_color }} {{ subfooter_separator }} {{ (subfooter_bottom_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (subfooter_bottom_region_paddings) ? ' region--no-paddings' : '' }}">
+  <div class="{{ subfooter_layout_container }}">
+    {# subfooter__container #}
+    <div class="clearfix subfooter__container">
+      <div class="row">
+
+        {% include '@askviv/page/regions/sub-footer/copyrights.html.twig' %}
+
+        {% if page.footer %}
+          <div class="{{ subfooter_second_grid_class }}">
+            {# subfooter-second #}
+            <div class="clearfix subfooter__section subfooter-second">
+              {{ page.footer }}
+            </div>
+            {# EOF: subfooter-second #}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    {# EOF: subfooter__container #}
+  </div>
+</div>

@@ -3,12 +3,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.homepage.body
     - field.field.node.homepage.field_ask_me
     - field.field.node.homepage.field_content
+    - field.field.node.homepage.field_facebook_page
+    - field.field.node.homepage.field_flickr
+    - field.field.node.homepage.field_footer_info_content_1
+    - field.field.node.homepage.field_footer_info_content_2
+    - field.field.node.homepage.field_footer_info_content_3
+    - field.field.node.homepage.field_footer_info_icon_1
+    - field.field.node.homepage.field_footer_info_icon_2
+    - field.field.node.homepage.field_footer_info_icon_3
+    - field.field.node.homepage.field_image
+    - field.field.node.homepage.field_text
+    - field.field.node.homepage.field_title
+    - field.field.node.homepage.field_twitter
+    - field.field.node.homepage.field_url
+    - image.style.thumbnail
     - node.type.homepage
   module:
     - field_group
+    - image
+    - link
     - paragraphs
     - text
 third_party_settings:
@@ -16,61 +31,60 @@ third_party_settings:
     group_banner_section:
       children:
         - field_image
-        - field_banner_title
-        - field_banner_body
-        - field_banner_link
+        - field_title
+        - field_text
+        - field_url
       parent_name: ''
       weight: 1
-      format_type: fieldset
+      format_type: tab
+      format_settings:
+        label: 'Banner Section'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Banner Section'
+    group_footer_info_section:
+      children:
+        - field_footer_info_icon_1
+        - field_footer_info_content_1
+        - field_footer_info_icon_2
+        - field_footer_info_content_2
+        - field_footer_info_icon_3
+        - field_footer_info_content_3
+      parent_name: ''
+      weight: 3
+      format_type: tab
       format_settings:
         id: ''
         classes: ''
+        formatter: closed
         description: ''
         required_fields: true
-      label: 'Banner section'
-    group_contact_details:
+      label: 'Footer Info Section'
+    group_social_media_section:
       children:
-        - field_address
-        - field_phone
-        - field_email
+        - field_facebook_page
+        - field_twitter
+        - field_flickr
       parent_name: ''
       weight: 4
-      format_type: fieldset
+      format_type: tab
       format_settings:
         id: ''
         classes: ''
+        formatter: closed
         description: ''
         required_fields: true
-      label: 'Contact details'
-    group_related_content:
-      children:
-        - field_blog_article
-        - field_newsletter_article
-      parent_name: ''
-      weight: 5
-      format_type: fieldset
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        required_fields: true
-      label: 'Related content'
+      label: 'Social Media Section'
 id: node.homepage.default
 targetEntityType: node
 bundle: homepage
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 2
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   field_content:
-    weight: 3
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -81,18 +95,115 @@ content:
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
-  langcode:
-    type: language_select
-    weight: 7
-    region: content
+  field_facebook_page:
+    weight: 6
     settings:
-      include_locked: true
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_flickr:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_footer_info_content_1:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_footer_info_content_2:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_footer_info_content_3:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_footer_info_icon_1:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_footer_info_icon_2:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_footer_info_icon_3:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_text:
+    weight: 28
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_twitter:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_url:
+    weight: 29
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
@@ -103,15 +214,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  translation:
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   created: true
   field_ask_me: true
+  langcode: true
   path: true
   promote: true
   sticky: true
+  translation: true
   uid: true

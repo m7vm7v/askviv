@@ -1,0 +1,26 @@
+{% if page.footer_bottom %}
+  {# footer-bottom #}
+  <div
+      class="clearfix footer-bottom {{ footer_bottom_background_color }} {{ footer_bottom_separator }}{{ (footer_bottom_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (footer_bottom_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ footer_bottom_layout_container }}">
+      {# footer-bottom__container #}
+      <div
+          class="clearfix footer-bottom__container{{ (footer_bottom_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+          {% if footer_bottom_animations == "enabled" %}
+        data-animate-effect="{{ footer_bottom_animation_effect }}"
+          {% endif %}>
+        <div class="row">
+          <div class="col-md-12">
+            {# footer-bottom #}
+            <div class="clearfix footer-bottom__section footer-bottom">
+              {{ page.footer_bottom }}
+            </div>
+            {# EOF:footer-bottom #}
+          </div>
+        </div>
+      </div>
+      {# EOF: footer-bottom__container #}
+    </div>
+  </div>
+  {# EOF: footer-bottom #}
+{% endif %}

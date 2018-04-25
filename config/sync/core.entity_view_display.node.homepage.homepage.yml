@@ -4,14 +4,16 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.homepage
-    - field.field.node.homepage.body
     - field.field.node.homepage.field_ask_me
     - field.field.node.homepage.field_content
+    - field.field.node.homepage.field_image
+    - field.field.node.homepage.field_text
+    - field.field.node.homepage.field_title
+    - field.field.node.homepage.field_url
     - node.type.homepage
   module:
     - ds
     - entity_reference_revisions
-    - text
     - user
     - webform
 third_party_settings:
@@ -40,14 +42,6 @@ targetEntityType: node
 bundle: homepage
 mode: homepage
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 0
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: ds_content
   field_ask_me:
     weight: 2
     label: hidden
@@ -68,5 +62,9 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
 hidden:
+  field_image: true
+  field_text: true
+  field_title: true
+  field_url: true
   langcode: true
   links: true

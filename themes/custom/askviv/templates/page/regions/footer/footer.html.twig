@@ -1,0 +1,80 @@
+{% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer_fifth %}
+  {# footer #}
+  <footer
+      class="clearfix footer {{ footer_background_color }} {{ footer_separator }} {{ (footer_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (footer_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ footer_layout_container }}">
+      <div class="clearfix footer__container">
+        <div class="row">
+          {% if page.footer_first %}
+            <div class="{{ footer_first_grid_class }}">
+              {# footer-first #}
+              <div
+                  class="clearfix footer__section footer-first{{ (footer_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+                  {% if footer_animations == "enabled" %}
+                data-animate-effect="{{ footer_animation_effect }}"
+                  {% endif %}>
+                {{ page.footer_first }}
+              </div>
+              {# EOF:footer-first #}
+            </div>
+          {% endif %}
+          {% if page.footer_second %}
+            <div class="{{ footer_second_grid_class }}">
+              {# footer-second #}
+              <div
+                  class="clearfix footer__section footer-second{{ (footer_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+                  {% if footer_animations == "enabled" %}
+                data-animate-effect="{{ footer_animation_effect }}"
+                  {% endif %}>
+                {{ page.footer_second }}
+              </div>
+              {# EOF:footer-second #}
+            </div>
+          {% endif %}
+          <div class="clearfix {{ footer_4_columns_clearfix_first }}"></div>
+          {% if page.footer_third %}
+            <div class="{{ footer_third_grid_class }}">
+              {# footer-third #}
+              <div
+                  class="clearfix footer__section footer-third{{ (footer_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+                  {% if footer_animations == "enabled" %}
+                data-animate-effect="{{ footer_animation_effect }}"
+                  {% endif %}>
+                {{ page.footer_third }}
+              </div>
+              {# EOF:footer-third #}
+            </div>
+          {% endif %}
+          <div class="clearfix {{ footer_4_columns_clearfix_second }} {{ footer_5_columns_clearfix }}"></div>
+          {% if page.footer_fourth %}
+            <div class="{{ footer_fourth_grid_class }}">
+              {# footer-fourth #}
+              <div
+                  class="clearfix footer__section footer-fourth{{ (footer_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+                  {% if footer_animations == "enabled" %}
+                data-animate-effect="{{ footer_animation_effect }}"
+                  {% endif %}>
+                {{ page.footer_fourth }}
+              </div>
+              {# EOF:footer-fourth #}
+            </div>
+          {% endif %}
+          {% if page.footer_fifth %}
+            <div class="{{ footer_fifth_grid_class }}">
+              {# footer-fifth #}
+              <div
+                  class="clearfix footer__section footer-fifth{{ (footer_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+                  {% if footer_animations == "enabled" %}
+                data-animate-effect="{{ footer_animation_effect }}"
+                  {% endif %}>
+                {{ page.footer_fifth }}
+              </div>
+              {# EOF:footer-fifth #}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </footer>
+  {# EOF footer #}
+{% endif %}

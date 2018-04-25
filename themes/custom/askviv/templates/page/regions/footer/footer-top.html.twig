@@ -1,0 +1,52 @@
+<div class="clearfix footer-top one-region region--light-typography region--black-background region--no-separator">
+  <div class="container">
+    <div class="clearfix footer-top__container animated fadeInUp" data-animate-effect="fadeInUp" >
+      <div class="row">
+        <div class="col-md-12">
+          <div class="clearfix footer-top__section footer-top-first">
+
+
+            <div class="contact-info-items-grid">
+              <div class="row">
+                <div class="{{ (footer_info_content_3) ? 'col-sm-4' : 'col-sm-6' }}">
+                  <div class="contact-info-item clearfix">
+                    <div class="contact-info-item__icon"><i class="{{ footer_info_icon_1 }}"></i></div>
+
+                    <div class="contact-info-item__text">{{ footer_info_content_1|raw }}</div>
+                  </div>
+                </div>
+
+                <div class="{{ (footer_info_content_3) ? 'col-sm-4' : 'col-sm-6' }}">
+                  <div class="contact-info-item clearfix">
+                    <div class="contact-info-item__icon"><i class="{{ footer_info_icon_2 }}"></i></div>
+
+                    <div class="contact-info-item__text">{{ footer_info_content_2|raw }}</div>
+                  </div>
+                </div>
+
+                {% if footer_info_content_3 %}
+                  <div class="col-sm-4">
+                    <div class="contact-info-item clearfix">
+                      <div class="contact-info-item__icon"><i class="{{ footer_info_icon_3 }}"></i></div>
+
+                      <div class="contact-info-item__text">{{ footer_info_content_3|raw }}</div>
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        {% if page.footer_top_second %}
+          <div class="{{ footer_top_second_grid_class }}">
+            <div class="clearfix footer-top__section footer-top-second">
+              {{ page.footer_top_second }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

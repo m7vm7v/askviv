@@ -1,0 +1,52 @@
+<?php
+/**
+ * @file
+ * Functions to support theming in the AskViv theme.
+ */
+
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function askviv_preprocess_page(&$variables) {
+
+  $blocks = \Drupal::entityManager()->getStorage('block_content')->loadByProperties();
+
+  foreach ($blocks as $block){
+    if($block->info->value === 'Homepage section'){
+      $nid = $block->get('field_content')->getValue()[0]['target_id'];
+
+      $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+      $node = \Drupal\node\Entity\Node::load($nid)->getTranslation($language);
+
+      if ($node && ($node->getType() == 'homepage')) {
+
+        $variables['banner_img'] = file_create_url($node->field_image->entity->getFileUri());
+        $variables['banner_url_link'] = \Drupal\Core\Url::fromUri($node->field_url->uri)->toString();
+        $variables['banner_url_title'] = $node->field_url->title;
+        $variables['banner_body'] = $node->field_text->value;
+        $variables['banner_title'] = $node->field_title->value;
+
+        $variables['footer_info_content_1'] = $node->field_footer_info_content_1->value;
+        $variables['footer_info_icon_1'] = $node->field_footer_info_icon_1->value;
+        $variables['footer_info_content_2'] = $node->field_footer_info_content_2->value;
+        $variables['footer_info_icon_2'] = $node->field_footer_info_icon_2->value;
+        $variables['footer_info_content_3'] = $node->field_footer_info_content_3->value;
+        $variables['footer_info_icon_3'] = $node->field_footer_info_icon_3->value;
+
+        $variables['facebook_page'] = $node->field_facebook_page->value;
+        $variables['flickr_page'] = $node->field_flickr->value;
+        $variables['twitter_page'] = $node->field_twitter->value;
+      }else{
+
+        $variables['banner_img'] = '/themes/custom/askviv/images/bible-read.jpg';
+      }
+    }
+  }
+
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+  $variables['site_slogan'] = $config->get('slogan');
+
+}

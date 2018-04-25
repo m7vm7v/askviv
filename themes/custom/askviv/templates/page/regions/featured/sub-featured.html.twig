@@ -1,0 +1,23 @@
+{% if page.sub_featured %}
+  {# sub_featured #}
+  <div
+      class="clearfix sub-featured {{ sub_featured_background_color }} {{ sub_featured_separator }}{{ (sub_featured_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (sub_featured_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ sub_featured_layout_container }}">
+      {# sub_featured__container #}
+      <div class="clearfix sub-featured__container{{ (sub_featured_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+          {% if sub_featured_animations == "enabled" %}
+        data-animate-effect="{{ sub_featured_animation_effect }}"
+          {% endif %}>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="clearfix sub-featured__section">
+              {{ page.sub_featured }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {# EOF:sub_featured__container #}
+    </div>
+  </div>
+  {# EOF: sub_featured #}
+{% endif %}

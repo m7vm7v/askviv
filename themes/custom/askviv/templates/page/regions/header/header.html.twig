@@ -1,0 +1,48 @@
+{% if page.header_first or page.header or page.header_third %}
+  {# header #}
+  <header role="banner" class="clearfix header {{ header_background_color }} {{ header_layout_container_class }} {{ header_layout_columns_class }}{{ (header_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (header_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ header_layout_container }}">
+      {# header__container #}
+      <div class="clearfix header__container">
+        <div class="row">
+          {% if page.header_first %}
+            <div class="{{ header_first_grid_class }}">
+              {# header-first #}
+              <div class="clearfix header__section header-first">
+                {{ page.header_first }}
+              </div>
+              {# EOF:header-first #}
+            </div>
+          {% endif %}
+          {% if page.header_third %}
+            <div class="{{ header_third_grid_class }}">
+              {# header-third #}
+              <div class="clearfix header__section header-third">
+                {{ page.header_third }}
+              </div>
+              {# EOF:header-third #}
+            </div>
+          {% endif %}
+          {% if page.header %}
+            <div class="{{ header_second_grid_class }}">
+              {# header-second #}
+              <div class="clearfix header__section header-second">
+                {{ page.header }}
+              </div>
+              {# EOF:header-second #}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      {# EOF: header__container #}
+    </div>
+    {% if post_progress_status == "enabled" %}
+      {# post-progress #}
+      <div class="post-progress">
+        <div class="post-progress__bar"></div>
+      </div>
+      {# EOF: post-progress #}
+    {% endif %}
+  </header>
+  {# EOF: header #}
+{% endif %}

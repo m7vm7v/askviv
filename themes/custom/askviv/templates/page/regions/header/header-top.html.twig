@@ -1,0 +1,35 @@
+{% if page.header_top_first or page.header_top_second %}
+  {# header-top #}
+  <div class="clearfix header-top {{ header_top_background_color }}{{ (header_top_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (header_top_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ header_top_layout_container }}">
+      {# header-top__container #}
+      <div class="clearfix header-top__container{{ (header_top_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+          {% if header_top_animations == "enabled" %}
+        data-animate-effect="{{ header_top_animation_effect }}"
+          {% endif %}>
+        <div class="row">
+          {% if page.header_top_first %}
+            <div class="{{ header_top_first_grid_class }}">
+              {# header-top-first #}
+              <div class="clearfix header-top__section header-top-first">
+                {{ page.header_top_first }}
+              </div>
+              {# EOF:header-top-first #}
+            </div>
+          {% endif %}
+          {% if page.header_top_second %}
+            <div class="{{ header_top_second_grid_class }}">
+              {# header-top-second #}
+              <div class="clearfix header-top__section header-top-second">
+                {{ page.header_top_second }}
+              </div>
+              {# EOF:header-top-second #}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      {# EOF: header-top__container #}
+    </div>
+  </div>
+  {# EOF: header-top #}
+{% endif %}

@@ -237,8 +237,12 @@
 
 .banner-image{
   background-size: cover;
-  background-image: url(/themes/custom/askviv/images/bible-read.jpg);
   background-attachment: fixed;
+}
+
+.banner-title{
+  font-family: 'Miss Fajardose', cursive !important;
+  font-size: 96px;
 }
 
 .images-full-width{

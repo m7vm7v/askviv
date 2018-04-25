@@ -1,0 +1,24 @@
+{% if page.featured_bottom %}
+  {# featured-bottom #}
+  <div
+      class="clearfix featured-bottom {{ featured_bottom_background_color }} {{ featured_bottom_separator }}{{ (featured_bottom_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (featured_bottom_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ featured_bottom_layout_container }}">
+      {# featured-bottom__container #}
+      <div
+          class="clearfix featured-bottom__container{{ (featured_bottom_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+          {% if featured_bottom_animations == "enabled" %}
+        data-animate-effect="{{ featured_bottom_animation_effect }}"
+          {% endif %}>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="clearfix featured-bottom__section">
+              {{ page.featured_bottom }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {# EOF:featured-bottom__container #}
+    </div>
+  </div>
+  {# EOF: featured-bottom #}
+{% endif %}

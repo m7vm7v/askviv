@@ -1,0 +1,15 @@
+<div class="col-sm-6 col-md-4">
+  <div class="clearfix subfooter-top__section subfooter-top-second">
+    <ul class="icons-list text-center icons-list--large">
+      {% if facebook_page %}
+        <li><a href="http://www.facebook.com/{{ facebook_page }}"><i class="fa fa-facebook-square"><span class="sr-only">facebook</span></i></a></li>
+      {% endif %}
+      {% if twitter_page %}
+        <li><a href="http://twitter.com/{{ twitter_page }}"><i class="fa fa-twitter-square"><span class="sr-only">twitter</span></i></a></li>
+      {% endif %}
+      {% if flickr_page %}
+        <li><a href="http://www.flickr.com/photos/{{ flickr_page }}"><i class="fa fa-flickr"><span class="sr-only">flickr</span></i></a></li>
+      {% endif %}
+    </ul>
+  </div>
+</div>

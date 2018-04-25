@@ -1,0 +1,37 @@
+{% if page.header_top_highlighted_first or page.header_top_highlighted_second %}
+  {# header_top_highlighted #}
+  <div
+      class="clearfix header-top-highlighted {{ header_top_highlighted_background_color }}{{ (header_top_highlighted_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (header_top_highlighted_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ header_top_highlighted_layout_container }}">
+      {# header_top_highlighted__container #}
+      <div
+          class="clearfix header-top-highlighted__container{{ (header_top_highlighted_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+          {% if header_top_highlighted_animations == "enabled" %}
+        data-animate-effect="{{ header_top_highlighted_animation_effect }}"
+          {% endif %}>
+        <div class="row">
+          {% if page.header_top_highlighted_first %}
+            <div class="{{ header_top_highlighted_first_grid_class }}">
+              {# header-top-highlighted-first #}
+              <div class="clearfix header-top-highlighted__section header-top-highlighted-first">
+                {{ page.header_top_highlighted_first }}
+              </div>
+              {# EOF:header-top-highlighted-first #}
+            </div>
+          {% endif %}
+          {% if page.header_top_highlighted_second %}
+            <div class="{{ header_top_highlighted_second_grid_class }}">
+              {# header-top-highlighted-second #}
+              <div class="clearfix header-top-highlighted__section header-top-highlighted-second">
+                {{ page.header_top_highlighted_second }}
+              </div>
+              {# EOF:header-top-highlighted-second #}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      {# EOF:header-top-highlighted__container #}
+    </div>
+  </div>
+  {# EOF: header-top-highlighted #}
+{% endif %}

@@ -1,0 +1,21 @@
+uuid: 6c94916a-7eff-4fc3-957b-32beba319f36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footer_info_content_1
+    - node.type.homepage
+  module:
+    - text
+id: node.homepage.field_footer_info_content_1
+field_name: field_footer_info_content_1
+entity_type: node
+bundle: homepage
+label: 'Footer Info Content 1'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,19 @@
+uuid: ca35ff1a-1ab0-46db-a5b7-8f20e98068bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flickr
+    - node.type.homepage
+id: node.homepage.field_flickr
+field_name: field_flickr
+entity_type: node
+bundle: homepage
+label: Flickr
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

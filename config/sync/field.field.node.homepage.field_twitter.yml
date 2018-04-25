@@ -1,0 +1,19 @@
+uuid: e9b214c6-b96d-4cf1-bce2-88c57859ae21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter
+    - node.type.homepage
+id: node.homepage.field_twitter
+field_name: field_twitter
+entity_type: node
+bundle: homepage
+label: Twitter
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

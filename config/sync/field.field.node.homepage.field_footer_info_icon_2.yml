@@ -1,0 +1,19 @@
+uuid: 636ec55e-f12e-4eb2-bfa7-019e32053bf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footer_info_icon_2
+    - node.type.homepage
+id: node.homepage.field_footer_info_icon_2
+field_name: field_footer_info_icon_2
+entity_type: node
+bundle: homepage
+label: 'Footer Info Icon 2'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

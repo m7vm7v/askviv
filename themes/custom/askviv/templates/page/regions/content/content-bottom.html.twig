@@ -1,0 +1,37 @@
+{% if page.content_bottom_first or page.content_bottom_second %}
+  {# content-bottom #}
+  <div
+      class="clearfix content-bottom {{ content_bottom_background_color }} {{ content_bottom_separator }}{{ (content_bottom_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (content_bottom_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ content_bottom_layout_container }}">
+      {# content-bottom__container #}
+      <div
+          class="clearfix content-bottom__container{{ (content_bottom_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+          {% if content_bottom_animations == "enabled" %}
+        data-animate-effect="{{ content_bottom_animation_effect }}"
+          {% endif %}>
+        <div class="row">
+          {% if page.content_bottom_first %}
+            <div class="{{ content_bottom_first_grid_class }}">
+              {# content-bottom-first #}
+              <div class="clearfix content-bottom__section content-bottom-first">
+                {{ page.content_bottom_first }}
+              </div>
+              {# EOF:content-bottom-first #}
+            </div>
+          {% endif %}
+          {% if page.content_bottom_second %}
+            <div class="{{ content_bottom_second_grid_class }}">
+              {# content-bottom-second #}
+              <div class="clearfix content-bottom__section content-bottom-second">
+                {{ page.content_bottom_second }}
+              </div>
+              {# EOF:content-bottom-second #}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      {# EOF:content-bottom__container #}
+    </div>
+  </div>
+  {# EOF: content-bottom #}
+{% endif %}

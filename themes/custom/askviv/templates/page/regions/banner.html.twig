@@ -1,0 +1,32 @@
+{% if is_front %}
+  <div
+      class="clearfix banner region--dark-typography region--gray-background region--no-block-paddings region--no-paddings">
+    <div class="container-fluid">
+      <div class="clearfix banner__container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="banner__section">
+              <div class="background-image-block__section field--mt-background-image-block">
+                <div class="background-image banner-image" style="background-image: url( {{ banner_img }} );"></div>
+                <div class="background-image-overlay region--light-typography region--black-background"
+                     style="opacity: 0.6;"></div>
+                <div class="container-fluid region--light-typography region--black-background">
+                  <div class="row bottom-spacing-medium top-spacing-medium">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                      <h2 class="block-title block-title--extra-large banner-title"><b>{{ banner_title }}</b></h2>
+                      <div class="bottom-spacing-small top-spacing-small">{{ banner_body|raw }}</div>
+                      <div class="bottom-spacing-medium">
+                        <p class="text-center"><a class="button" href="{{ banner_url_link }}">{{ banner_url_title }}</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

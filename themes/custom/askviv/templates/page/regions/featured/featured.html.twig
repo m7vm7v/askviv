@@ -1,0 +1,23 @@
+{% if page.featured %}
+  {# featured #}
+  <div
+      class="clearfix featured {{ featured_background_color }} {{ featured_separator }}{{ (featured_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (featured_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ featured_layout_container }}">
+      {# featured__container #}
+      <div class="clearfix featured__container{{ (featured_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+          {% if featured_animations == "enabled" %}
+        data-animate-effect="{{ featured_animation_effect }}"
+          {% endif %}>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="clearfix featured__section">
+              {{ page.featured }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {# EOF:featured__container #}
+    </div>
+  </div>
+  {# EOF: featured #}
+{% endif %}

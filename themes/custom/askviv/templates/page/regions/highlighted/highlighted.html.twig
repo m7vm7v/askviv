@@ -1,0 +1,35 @@
+{% if page.highlighted_first or page.highlighted_second %}
+  {# highlighted #}
+  <div class="clearfix highlighted {{ highlighted_regions }} {{ highlighted_background_color }} {{ highlighted_separator }}{{ (highlighted_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (highlighted_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ highlighted_layout_container }}">
+      {# highlighted__container #}
+      <div class="clearfix highlighted__container{{ (highlighted_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+          {% if highlighted_animations == "enabled" %}
+        data-animate-effect="{{ highlighted_animation_effect }}"
+          {% endif %}>
+        <div class="row">
+          {% if page.highlighted_first %}
+            <div class="{{ highlighted_first_grid_class }}">
+              {# highlighted-first #}
+              <div class="clearfix highlighted__section highlighted-first">
+                {{ page.highlighted_first }}
+              </div>
+              {# EOF:highlighted-first #}
+            </div>
+          {% endif %}
+          {% if page.highlighted_second %}
+            <div class="{{ highlighted_second_grid_class }}">
+              {# highlighted-second #}
+              <div class="clearfix highlighted__section highlighted-second">
+                {{ page.highlighted_second }}
+              </div>
+              {# EOF:highlighted-second #}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      {# EOF:highlighted__container #}
+    </div>
+  </div>
+  {# EOF: highlighted #}
+{% endif %}

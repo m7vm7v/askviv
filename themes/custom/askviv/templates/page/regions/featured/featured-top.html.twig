@@ -1,0 +1,23 @@
+{% if page.featured_top %}
+  {# featured-top #}
+  <div
+      class="clearfix featured-top {{ featured_top_background_color }} {{ featured_top_separator }}{{ (featured_top_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (featured_top_region_paddings) ? ' region--no-paddings' : '' }}">
+    <div class="{{ featured_top_layout_container }}">
+      {# featured-top__container #}
+      <div class="clearfix featured-top__container{{ (featured_top_animations == "enabled") ? ' mt-no-opacity' : '' }}"
+          {% if featured_top_animations == "enabled" %}
+        data-animate-effect="{{ featured_top_animation_effect }}"
+          {% endif %}>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="clearfix featured-top__section">
+              {{ page.featured_top }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {# EOF:featured-top__container #}
+    </div>
+  </div>
+  {# EOF: featured-top #}
+{% endif %}
