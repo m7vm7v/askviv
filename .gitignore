@@ -62,3 +62,7 @@ svg-sprite.svg
 /.htaccess
 /error_log
 /example.gitignore
+/core/
+/web.config
+/profiles/
+/themes/contrib/restaurant_lite/
