@@ -3,9 +3,5 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
-          reset_button_label: Reset
-      filters:
-        access:
-          expose:
-            label: 'Last access'
+          submit_button: Търси
+          reset_button_label: Рестартирай

@@ -3,18 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
-          reset_button_label: Reset
-      fields:
-        info:
-          label: 'Block description'
-        changed:
-          label: Updated
-        operations:
-          label: Operations
-      filters:
-        info:
-          expose:
-            label: 'Block description'
+          submit_button: Търси
+          reset_button_label: Рестартирай
   page_1:
-    display_title: Page
+    display_title: Начало

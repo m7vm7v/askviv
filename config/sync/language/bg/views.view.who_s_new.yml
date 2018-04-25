@@ -3,8 +3,5 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
-          reset_button_label: Reset
-  block_1:
-    display_options:
-      block_category: User
+          submit_button: Търси
+          reset_button_label: Рестартирай

@@ -1,19 +1,8 @@
-label: 'Търсене на съдържание'
 display:
   default:
     display_options:
       exposed_form:
         options:
-          submit_button: Search
-          reset_button_label: Reset
-      pager:
-        options:
-          tags:
-            previous: '‹ предишна'
-            next: 'следваща ›'
-      filters:
-        search_api_fulltext:
-          expose:
-            label: Search
+          reset_button_label: Рестартирай
   page_1:
-    display_title: Page
+    display_title: Начало

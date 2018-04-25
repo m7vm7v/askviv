@@ -3,16 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
-          reset_button_label: Reset
-      fields:
-        title:
-          label: Title
-        name:
-          label: Author
-        changed:
-          label: 'Last update'
-  attachment_1:
-    display_title: Attachment
+          submit_button: Търси
+          reset_button_label: Рестартирай
   page_1:
-    display_title: Page
+    display_title: Начало

@@ -1,12 +1,9 @@
-label: 'Recent content'
 display:
   default:
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
-          reset_button_label: Reset
-      title: 'Recent content'
-      use_more_text: More
+          submit_button: Търси
+          reset_button_label: Рестартирай
   block_1:
-    display_title: Block
+    display_title: Блокирай

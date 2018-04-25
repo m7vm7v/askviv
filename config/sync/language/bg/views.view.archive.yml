@@ -3,9 +3,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
-          reset_button_label: Reset
+          submit_button: Търси
+          reset_button_label: Рестартирай
   block_1:
-    display_title: Block
+    display_title: Блокирай
   page_1:
-    display_title: Page
+    display_title: Начало
