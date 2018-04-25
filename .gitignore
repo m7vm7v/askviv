@@ -66,3 +66,6 @@ svg-sprite.svg
 /web.config
 /profiles/
 /themes/contrib/restaurant_lite/
+!/sites/default/settings.php
+/sites/default/settings.php
+sites/default/settings.php
