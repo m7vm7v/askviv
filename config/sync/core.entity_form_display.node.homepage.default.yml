@@ -26,6 +26,7 @@ dependencies:
     - link
     - paragraphs
     - text
+    - webform
 third_party_settings:
   field_group:
     group_banner_section:
@@ -83,6 +84,13 @@ targetEntityType: node
 bundle: homepage
 mode: default
 content:
+  field_ask_me:
+    type: webform_entity_reference_select
+    weight: 6
+    region: content
+    settings:
+      default_data: true
+    third_party_settings: {  }
   field_content:
     weight: 2
     settings:
@@ -216,7 +224,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_ask_me: true
   langcode: true
   path: true
   promote: true

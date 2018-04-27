@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.newsletter.body
     - field.field.node.newsletter.field_content
     - field.field.node.newsletter.field_image
     - field.field.node.newsletter.field_related_content
@@ -14,20 +13,12 @@ dependencies:
     - ds
     - entity_reference_revisions
     - image
-    - text
     - user
 id: node.newsletter.default
 targetEntityType: node
 bundle: newsletter
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_content:
     type: entity_reference_revisions_entity_view
     weight: 2

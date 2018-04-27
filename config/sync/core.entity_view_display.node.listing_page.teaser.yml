@@ -4,24 +4,19 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.listing_page.body
+    - field.field.node.listing_page.field_content
+    - field.field.node.listing_page.field_image
+    - field.field.node.listing_page.field_listing
+    - field.field.node.listing_page.field_short_description
+    - field.field.node.listing_page.field_user
     - node.type.listing_page
   module:
-    - text
     - user
 id: node.listing_page.teaser
 targetEntityType: node
 bundle: listing_page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content
