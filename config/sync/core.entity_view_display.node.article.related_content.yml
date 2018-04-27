@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.related_content
-    - field.field.node.article.body
     - field.field.node.article.field_content
     - field.field.node.article.field_image
     - field.field.node.article.field_related_content
@@ -98,7 +97,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
-  body: true
   field_content: true
   field_related_content: true
   field_tags: true

@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.listing_page.body
     - field.field.node.listing_page.field_content
     - field.field.node.listing_page.field_image
     - field.field.node.listing_page.field_listing
@@ -14,22 +13,12 @@ dependencies:
   module:
     - image
     - paragraphs
-    - text
     - viewfield
 id: node.listing_page.default
 targetEntityType: node
 bundle: listing_page
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 1
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   field_content:
     weight: 2
     settings:
@@ -87,6 +76,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
 hidden:
   created: true
   path: true

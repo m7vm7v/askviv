@@ -4,28 +4,18 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.newsletter.body
     - field.field.node.newsletter.field_content
     - field.field.node.newsletter.field_image
     - field.field.node.newsletter.field_related_content
     - field.field.node.newsletter.field_short_description
     - node.type.newsletter
   module:
-    - text
     - user
 id: node.newsletter.teaser
 targetEntityType: node
 bundle: newsletter
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content

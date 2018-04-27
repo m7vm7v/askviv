@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.homepage
-    - field.field.node.listing_page.body
     - field.field.node.listing_page.field_content
     - field.field.node.listing_page.field_image
     - field.field.node.listing_page.field_listing
@@ -82,7 +81,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
-  body: true
   field_content: true
   field_listing: true
   field_user: true
