@@ -12,7 +12,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function askviv_misc_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
-  if ($form_id === 'webform_submission_ask_me_node_3_edit_form') {
+  if (in_array($form_id, ['webform_submission_ask_me_edit_form', 'webform_submission_ask_me_node_3_edit_form'])) {
     $form['actions']['submit']['#value'] = t('Save, send email & lock the submission. Create "Asked" content if publicity is ticked.');
     $input = $form_state->getUserInput();
 
@@ -20,6 +20,7 @@ function askviv_misc_form_alter(&$form, FormStateInterface $form_state, $form_id
       send_email_for_answered_question($input);
       $form_state->getFormObject()->getEntity()->setLocked(true)->setSticky(true)->save();
 
+      //TODO set language var
       if($input['publicity'] == true) {
         \Drupal\node\Entity\Node::create([
           'type'            => 'asked',
