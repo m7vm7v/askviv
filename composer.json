@@ -29,7 +29,8 @@
         "drupal/webform_slack": "1.x-dev",
         "drupal/slack": "^1.2",
         "drupal/google_analytics": "^2.2",
-        "drupal/google_analytics_reports": "^3.0@beta"
+        "drupal/google_analytics_reports": "^3.0@beta",
+        "drupal/smtp": "^1.0@beta"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
