@@ -11,6 +11,27 @@ use Drupal\Core\Form\FormStateInterface;
  * Implements hook_form_alter().
  */
 function askviv_misc_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  if ($form_id === 'webform_submission_ask_me_node_3_edit_form') {
+    $form['actions']['submit']['#value'] = t('Save, send email & lock the submission. Create "Asked" content if publicity is ticked.');
+    $input = $form_state->getUserInput();
+
+    if($input['answer']){
+      send_email_for_answered_question($input);
+      $form_state->getFormObject()->getEntity()->setLocked(true)->setSticky(true)->save();
+
+      if($input['publicity'] == true) {
+        \Drupal\node\Entity\Node::create([
+          'type'            => 'asked',
+          'title'           => $input['question'],
+          'field_answer'    => $input['answer'],
+          'field_publicity' => TRUE,
+        ])->save();
+      }
+    }
+  }
+
+
   // UI tweaks for preset filters on listing pages.
   if (in_array($form_id, ['node_listing_page_form', 'node_listing_page_edit_form'])) {
 
@@ -22,5 +43,31 @@ function askviv_misc_form_alter(&$form, FormStateInterface $form_state, $form_id
     ];
 
     unset($form['field_listing']['widget'][0]['token_help']);
+  }
+}
+
+function send_email_for_answered_question($input){
+  $mailManager = \Drupal::service('plugin.manager.mail');
+  $module = 'askviv_misc';
+  $key = 'question_has_been_answered';
+  $to = $input['email'];
+
+  $mailManager->mail($module, $key, $to, 'en', $input, NULL, TRUE);
+}
+
+/**
+ * Implements hook_mail().
+ */
+function askviv_misc_mail($key, &$message, $input) {
+  $options = [
+    'langcode' => 'en',
+  ];
+
+  switch ($key) {
+    case 'question_has_been_answered':
+      $message['from']    = \Drupal::config('system.site')->get('mail');
+      $message['subject'] = t('Your question has been answered: @question', ['@question' => $input['question']], $options);
+      $message['body'][]  = $input['answer'];
+      break;
   }
 }
