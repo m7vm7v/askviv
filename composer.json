@@ -30,7 +30,8 @@
         "drupal/slack": "^1.2",
         "drupal/google_analytics": "^2.2",
         "drupal/google_analytics_reports": "^3.0@beta",
-        "drupal/smtp": "^1.0@beta"
+        "drupal/smtp": "^1.0@beta",
+        "drupal/eu_cookie_compliance": "^1.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

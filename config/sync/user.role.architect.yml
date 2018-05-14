@@ -38,6 +38,7 @@ permissions:
   - 'delete testimony revisions'
   - 'delete webform submissions any node'
   - 'delete webform submissions own node'
+  - 'display eu cookie compliance popup'
   - 'edit any article content'
   - 'edit any asked content'
   - 'edit any blog content'
