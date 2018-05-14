@@ -35,7 +35,7 @@ popup_link_new_window: true
 popup_position: false
 fixed_top_position: true
 popup_text_hex: ffffff
-popup_width: 85%
+popup_width: 100%
 use_bare_css: false
 disagree_do_not_show_popup: false
 reload_page: false

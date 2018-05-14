@@ -94,10 +94,31 @@
   font-weight: bold;
 }
 
-.blog-info-box > div > a:hover{
+.blog-info-box. > div > a:hover{
   background-color: #08605F;
   color: white;
   font-weight: bold;
+}
+
+.eu-cookie-compliance-banner{
+  padding-top: 10px;
+}
+
+.eu-cookie-compliance-button{
+  margin-left: 0px !important;
+  margin-right: 20px !important;
+  pointer-events: all !important;
+  background-color: white !important;
+  color: #08605F !important;
+  font-weight: bold !important;
+}
+
+.eu-cookie-compliance-button:hover{
+  margin-left: 0px !important;
+  margin-right: 20px !important;
+  background-color: #08605F !important;
+  color: white !important;
+  font-weight: bold !important;
 }
 
 .blog-image{
