@@ -12,3 +12,14 @@ tags:
   canonical_url: '[current-page:url]'
   description: '[site:slogan]'
   image_src: /themes/custom/askviv/screenshot.png
+  og_image: /themes/custom/askviv/screenshot.png
+  og_url: '[current-page:url:absolute]'
+  og_description: '[site:slogan]'
+  og_site_name: '[site:name]'
+  og_image_type: image/png
+  og_title: '[current-page:title]'
+  twitter_cards_image: /themes/custom/askviv/screenshot.png
+  twitter_cards_page_url: /themes/custom/askviv/screenshot.png
+  twitter_cards_description: '[site:slogan]'
+  twitter_cards_type: summary
+  twitter_cards_title: '[current-page:title]'
